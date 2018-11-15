@@ -3140,6 +3140,9 @@ html.is-reveal-open {
 /* Medium only */
 /* Large and up */
 /* Large only */
+body {
+  min-width: 800px; }
+
 h5, h6 {
   font-family: 'Open Sans', sans-serif; }
 
@@ -3222,8 +3225,8 @@ h3 a:hover {
     font-size: 2.75rem; }
   .bpHeader__bpSubtitle {
     color: #1f1f1f;
-    margin-top: -.25rem;
-    font-style: italic; }
+    margin-right: 1.5rem;
+    margin-top: -.5rem; }
 
 .bpNavigation {
   background-color: #fefefe; }
