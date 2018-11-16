@@ -3406,13 +3406,13 @@ h3 a:hover {
         font-size: 2.75rem; } }
   .bpHeader__bpSubtitle {
     color: #1f1f1f;
-    margin-right: -3rem;
-    margin-top: -.5rem;
+    position: relative;
+    right: -1.5rem;
+    top: -.5rem;
     font-size: .875rem;
     /* Medium and up */ }
     @media screen and (min-width: 40em) {
       .bpHeader__bpSubtitle {
-        margin-right: 1.5rem;
         font-size: 1rem; } }
 
 .bpNavigation {
