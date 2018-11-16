@@ -18,7 +18,7 @@
     <div class="cell">
 
       <a href="#" data-open="searchModal"><i class="fas fa-search"></i> Search</a> |
-      <a href="#"><i class="fas fa-envelope"></i> Contact</a> |
+      <a href="#" class="hide-for-small-only"><i class="fas fa-envelope"></i> Contact</a> <span class="hide-for-small-only">|</span>
       <a href="#" data-open="sendToFriendModal"><i class="fas fa-arrow-circle-up"></i> Send page to friend</a>
 
 
@@ -39,18 +39,25 @@
     </div>
   </div>
 </div><!--.bpHeader-->
-<div class="grid-container bpNavigation">
+<div class="grid-container full bpNavigation">
   <div class="grid-x grid-margin-x">
     <div class="cell">
 
-      <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-        <div class="title-bar-title">Menu</div>
+      <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium" data-toggle>
+        <a href="#" class="bpNavigation__navToggle" data-toggle style="display:block;">
+          <button class="menu-icon" type="button"></button>
+          <div class="title-bar-title">Menu</div>
+        </a>
       </div>
 
-      <div class="top-bar" id="responsive-menu">
-        <div class="top-bar-left">
+      <div class="top-bar" id="main-menu">
+        <div class="top-bar-left hide-for-medium">
           <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text hide">Site Title</li>
+          </ul>
+        </div>
+        <div class="top-bar-left">
+          <ul class="menu vertical medium-horizontal expanded" data-responsive-menu="drilldown medium-dropdown">
             <li class="has-submenu">
               <a href="#0" class="bpNavigation__topLevelItem">Major League</a>
               <ul class="submenu menu vertical" data-submenu>
@@ -91,6 +98,7 @@
               </ul>
             </li>
             <li><a href="#0" class="bpNavigation__topLevelItem">Store</a></li>
+            <li><a href="#0" class="bpNavigation__topLevelItem show-for-small-only">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -274,8 +282,8 @@
   <div class="grid-x grid-margin-x">
     <div class="cell large-12">
 
-      <img src="img/graham-pic.png" class="float-right" style="margin:2rem;">
       <h2>Welcome to BaseballPilgrimages.com</h2>
+      <img src="img/graham-pic.png" class="float-right" style="margin:1rem;">
       <p>On March 16, 2001, after saving up enough vacation time to take two weeks off, I arrived in Melbourne, Florida for Spring Training. Coinciding with my arrival was an unexpected phone call, informing me that I had been laid off, another casualty of the dot-com bust. And so the journey began when my personal misfortune afforded me the time to do what I had always wished: travel the country. Add to that my passion for baseball, and most of my trips have included numerous baseball pilgrimages, hence the name of the site. And when my original car died on the way to Vero Beach for a game on my Spring Training journey of 2002, I bought a new one and embarked on a cross-country trip to California.</p>
 
       <p>What started out as just a trip to Spring Training has morphed into visiting ballparks at all levels, from the lowest levels of the bush leagues to the legendary ballyards in the big leagues. Although I'd been to a number of ballparks prior to the 2001 season, I decided to use that year as my starting point. Through nine seasons, I’ve seen 254 games in 100 ballparks and traveled thousands of miles across our great country in pursuit of the national pastime. I've been to places I'd never thought I'd go, or probably would not have considered....all because of a baseball game.</p>
@@ -340,7 +348,7 @@
       </div>
 
     </div>
-    <div class="cell medium-6 large-3">
+    <div class="cell medium-6 large-3" style="min-height: 340px;">
 
       <div class="bpFooter__headingWrapper">
         <i class="fas fa-comments"></i>
