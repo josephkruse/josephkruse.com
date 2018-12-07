@@ -114,7 +114,7 @@
       <h1 class="bpTitleBar__mainHeading">Angel Stadium - Los Angeles Angels</h1>
     </div>
     <div class="cell large-3 text-right">
-      <a href="#" class="button bpTitleBar__storeButton">Angels Shop</a>
+      <a href="#" class="button bpTitleBar__storeButton">Ballpark Directory</a>
     </div>
   </div>
 </div>
@@ -134,7 +134,7 @@
 
 <div class=" bpContent">
   <div class="grid-x"><!--upper content area-->
-    <div class="cell large-8 contentCell" id="foo">
+    <div class="cell large-8 small-order-2 large-order-1 contentCell" id="foo">
       <img src="img/angels.jpg" style="width:auto;height:auto;max-width:none;min-width:100%;">
 
       <div style="margin:1.5rem 1.5rem 1rem;">
@@ -210,7 +210,7 @@
 
 
         <h2>Angel Stadium Footnotes - Facts &amp; Figures</h2>
-        <ul>
+        <ul class="ringBullet">
           <li>Construction cost: $24 million (1966)</li>
           <li>Renovation cost: $118 million (1998) </li>
           <li>Original construction began on August 31, 1964 and the first regular season game was on April 19, 1966.</li>
@@ -236,11 +236,13 @@
       </div>
 
     </div>
-    <div class="cell large-4" style="padding:1rem;" data-sticky-container>
+    <div class="cell large-4 small-order-1 large-order-2" data-sticky-container>
 
-      <div class="bpInfoBox sticky" data-sticky data-anchor="foo" data-margin-top="1" data-margin-bottom="1">
-        <h3>Address</h3>
-        <p>2000 Gene Autry Way<br>
+      <div class="sticky" data-sticky data-anchor="foo" data-sticky-on="large" data-margin-top="1" data-margin-bottom="1">
+
+        <div class="bpInfoBox bpInfoBox--grey">
+          <h3>Address</h3>
+          <p>2000 Gene Autry Way<br>
           Anaheim, CA 92806</p>
 
           <h3>Angel Stadium Info</h3>
@@ -271,6 +273,29 @@
           <h3>Ballpark Rank:</h3>
           <p style="font-size:1.125rem;"><strong>9 of 15</strong> (American League)<br>
           <strong>21 of 30</strong> (overall)</p>
+        </div>
+
+        <div class="bpInfoBox bpInfoBox--red">
+          <h3>2017 Ballpark Info</h3>
+          <p><strong>When gates open:</strong><br>
+          1.5 hours before game</p>
+
+          <p><strong>Cost to park in stadium lots:</strong><br>
+          $15</p>
+
+          <p><strong>Kids who get in free:</strong><br>
+          32" tall and shorter<br>
+          <small>(must sit on an adult's lap)</small></p>
+        </div>
+
+        <div class="bpInfoBox bpInfoBox--red">
+          <h3>Historical Happenings</h3>
+          <p><small>Kauffman Stadium has been the site of</small><br>
+          3 <a href="#">no-hitters</a><br>
+          5 <a href="#">cycles</a><br>
+          5 triple plays<br>
+          39 <a href="#">postseason games</a></p>
+        </div>
 
       </div>
     </div>
@@ -283,7 +308,7 @@
       <div class="bpPanel">
         <h4 class="bpPanel__heading"><i class="fas fa-flag" style="margin-right:.5rem;"></i> Angel Stadium Resources</h4>
         <div class="bpPanel__content">
-          <ul style="margin-bottom:0;margin-left: 1.5rem;">
+          <ul class="ringBullet" style="margin-bottom:0;margin-left: 1.5rem;">
             <li><a href="http://www.stadiumsofprofootball.com/past/AnaheimStadium.htm" target="_blank">Anaheim Stadium - LA Rams</a></li>
             <li><a href="http://www.ballparkreviews.com/anaheim/anaheim.htm" target="_blank">Ballpark Reviews</a></li>
             <li><a href="http://www.ballparksofbaseball.com/al/AngelStadium.htm" target="_blank">Ballparks of Baseball</a></li>
@@ -298,7 +323,7 @@
     <div class="cell large-6">
 
       <div class="bpPanel">
-        <h4 class="bpPanel__heading"><i class="fas fa-info" style="margin-right:.5rem;"></i> Anaheim Info</h4>
+        <h4 class="bpPanel__heading"><i class="fas fa-city" style="margin-right:.5rem;"></i> Anaheim Info</h4>
         <div class="bpPanel__content">
           <p><strong>Airport Code:</strong> SNA<br>
           <strong>City Population:</strong> 345,556 <small>(2007 CA Department of Finance estimates)</small><br>
@@ -423,9 +448,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/js/foundation.js" type="text/javascript"></script>
 -->
 
-<script>
-  $(document).foundation();
-</script>
 
 </body>
 </html>

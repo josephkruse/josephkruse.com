@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/app2.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.18/css/dataTables.foundation.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
   <link rel="icon" type="image/png" href="img/favicon.png">
 
@@ -118,111 +120,132 @@
   <div class="grid-x grid-padding-x">
     <div class="cell large-12">
 
-      <table class="bpBallparkTable">
+      <table class="bpBallparkTable hover dataTableSimple">
         <thead>
           <tr>
             <td>Ballpark</td>
             <td>City</td>
+            <td>State</td>
             <td>Home Team</td>
           </tr>
         </thead>
         <tbody>
         <tr>
             <td><a href="ballpark.html">Angel Stadium</a></td>
-            <td>Anaheim, CA</td>
+            <td>Anaheim</td>
+            <td>CA</td>
             <td>Los Angeles Angels</td>
         </tr>
         <tr>
             <td><a href="ballpark.html">Globe Life Park</a></td>
-            <td>Arlington, TX</td>
+            <td>Arlington</td>
+            <td>TX</td>
             <td>Texas Rangers</td>
         </tr>
         <tr>
             <td><a href="ballpark.html">Camden Yards</a></td>
-            <td>Baltimore, MD</td>
+            <td>Baltimore</td>
+            <td>MD</td>
             <td>Baltimore Orioles</td>
         </tr>
         <tr>
             <td><a href="ballpark.html">Fenway Park</a></td>
-            <td>Boston, MA</td>
+            <td>Boston</td>
+            <td>MA</td>
             <td>Boston Red Sox</td>
         </tr>
         <tr>
           <td><a href="ballpark.html">Guaranteed Rate Field</a></td>
-          <td>Chicago, IL</td>
+          <td>Chicago</td>
+          <td>IL</td>
           <td>Chicago White Sox</td>
         </tr>
         <tr>
           <td><a href="ballpark.html">Progressive Field</a></td>
-          <td>Cleveland, OH</td>
+          <td>Cleveland</td>
+          <td>OH</td>
           <td>Cleveland Indians</td>
         </tr>
         <tr>
           <td><a href="ballpark.html">Comerica Park</a></td>
-          <td>Detroit, MI</td>
+          <td>Detroit</td>
+          <td>MI</td>
           <td>Detroit Tigers</td>
         </tr>
         <tr>
           <td><a href="ballpark.html">Minute Maid Park</a></td>
-          <td>Houston, TX</td>
+          <td>Houston</td>
+          <td>TX</td>
           <td>Houston Astros</td>
         </tr>
         <tr>
           <td><a href="ballpark.html">Kauffman Stadium</a></td>
-          <td>Kansas City, MO</td>
+          <td>Kansas City</td>
+          <td>MO</td>
           <td>Kansas City Royals</td>
         </tr>
         <tr>
           <td><a href="ballpark.html">Target Field</a></td>
-          <td>Minneapolis, MN</td>
+          <td>Minneapolis</td>
+          <td>MN</td>
           <td>Minnesota Twins</td>
         </tr>
         <tr>
           <td><a href="ballpark.html">Yankee Stadium</a></td>
-          <td>Bronx, NY</td>
+          <td>Bronx</td>
+          <td>NY</td>
           <td>New York Yankees</td>
         </tr>
         <tr>
           <td><a href="ballpark.html">Oakland Coliseum</a></td>
-          <td>Oakland, CA</td>
+          <td>Oakland</td>
+          <td>CA</td>
           <td>Oakland A's</td>
         </tr>
         <tr>
           <td><a href="ballpark.html">Safeco Field</a></td>
-          <td>Seattle, WA</td>
+          <td>Seattle</td>
+          <td>WA</td>
           <td>Seattle Mariners</td>
         </tr>
         <tr>
-        <td><a href="ballpark.html">Tropicana Field</a></td>
-        <td>St. Petersburg, FL</td>
-        <td>Tampa Bay Rays</td>
+          <td><a href="ballpark.html">Tropicana Field</a></td>
+          <td>St. Petersburg</td>
+          <td>FL</td>
+          <td>Tampa Bay Rays</td>
         </tr>
         <tr>
-        <td><a href="">Rogers Centre</a></td>
-        <td>Toronto, ON</td>
-        <td>Toronto Blue Jays</td>
+          <td><a href="ballpark.html">Rogers Centre</a></td>
+          <td>Toronto</td>
+          <td>ON</td>
+          <td>Toronto Blue Jays</td>
       </tr></tbody>
     </table>
 
-    <h2>Former American League Stadiums</h2>
+    <div class="bpDivider" style="margin-top:0;"></div>
 
-    <table class="bpBallparkTable">
+    <h2 style="margin-bottom:0;">Former American League Stadiums</h2>
+
+    <table class="bpBallparkTable hover dataTableSimple">
       <thead>
         <tr>
           <td>Ballpark</td>
           <td>City</td>
+          <td>State</td>
           <td>Last Tenant</td>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><a href="ballpark.html">Metrodome</a></td>
-          <td>Minneapolis, MN</td>
+          <td>Minneapolis</td>
+          <td>MN</td>
           <td>Minnesota Twins</td>
         </tr>
         <tr>
           <td><a href="ballpark.html">Yankee Stadium</a></td>
-          <td>Bronx, NY</td>
+          <td>Bronx</td>
+          <td>NY</td>
           <td>New York Yankees</td>
         </tr></tbody>
       </table>
@@ -335,6 +358,29 @@
 </div>
 
 <script src="js/app.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.18/js/dataTables.foundation.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready( function () {
+    $('.dataTableSimple').DataTable({
+      paging: false,
+      searching: false,
+      info:false,
+      "order": []
+    });
+  });
+
+  $(document).ready(function() {
+
+      $('.dataTableSimple tr').click(function() {
+          var href = $(this).find("a").attr("href");
+          if(href) {
+              window.location = href;
+          }
+      });
+
+  });
+</script>
 
 </body>
 </html>
