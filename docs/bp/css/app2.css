@@ -337,13 +337,37 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   background-color: #fefefe; }
 
 .bpTitleBar {
+  max-width: 78.75rem;
+  margin: 0 auto;
   border-bottom: 1px solid #eee;
-  background-color: white; }
+  background-color: #fefefe; }
+  .bpTitleBar--americanLeague {
+    background-color: #005297;
+    border: none; }
   .bpTitleBar__mainHeading {
     color: #b60000;
-    margin: 1rem 2rem; }
-  .bpTitleBar__storeButton {
-    margin-top: 1.5rem; }
+    margin: .5rem; }
+    @media print, screen and (min-width: 40em) {
+      .bpTitleBar__mainHeading {
+        margin: 1rem 2rem; } }
+    .bpTitleBar__mainHeading small {
+      color: #ccc; }
+    @media screen and (min-width: 40em) and (max-width: 63.99875em) {
+      .bpTitleBar__mainHeading {
+        font-size: 2.25rem; } }
+  .bpTitleBar__button {
+    min-width: 0 !important; }
+    @media print, screen and (min-width: 64em) {
+      .bpTitleBar__button {
+        margin-top: 1.5rem; } }
+    @media screen and (min-width: 40em) and (max-width: 63.99875em) {
+      .bpTitleBar__button {
+        margin-top: 1.5rem;
+        font-size: 0.75rem; } }
+    @media screen and (max-width: 39.99875em) {
+      .bpTitleBar__button {
+        margin: .75rem auto 0;
+        font-size: 0.6rem; } }
 
 .bpInfoBar__dataField {
   color: #fefefe;
@@ -405,6 +429,173 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   .bpBallparkTable a, .bpBallparkTable thead {
     font-size: 1.25rem;
     text-decoration: none; }
+  .bpBallparkTable .sorting_1 {
+    background-color: #def0ff; }
+
+.bpCalendar {
+  margin: 1rem 0 1.5rem; }
+  .bpCalendar::before, .bpCalendar::after {
+    display: table;
+    content: ' ';
+    flex-basis: 0;
+    order: 1; }
+  .bpCalendar::after {
+    clear: both; }
+  .bpCalendar__titleBar {
+    padding: .5rem 0 .25rem;
+    background-color: #BA0021; }
+  .bpCalendar__titleHeading {
+    margin: 0;
+    color: #fefefe;
+    text-align: center;
+    font-size: 1.75rem; }
+  .bpCalendar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; }
+  .bpCalendar li {
+    display: block;
+    float: left;
+    width: 14.342%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px; }
+  .bpCalendar__dayNamesContainer {
+    height: 2rem;
+    background: #BA0021; }
+  .bpCalendar__dayName {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 13px; }
+  .bpCalendar .day {
+    height: 10rem; }
+  .bpCalendar .date {
+    float: right;
+    text-align: center;
+    margin-bottom: .5rem;
+    padding: .125rem;
+    background: #2a323c;
+    color: #fff;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: #2a323c;
+    color: #fff; }
+  .bpCalendar .day--withEvent .event {
+    clear: both;
+    display: block;
+    border-radius: .5rem;
+    padding: .25rem .25rem .25rem .5rem;
+    background: #c4e5ff;
+    border: 1px solid #3f7db1; }
+    .bpCalendar .day--withEvent .event h5 {
+      margin: 0 0 .25rem;
+      color: #0a0a0a;
+      font-weight: 600; }
+    .bpCalendar .day--withEvent .event .button {
+      float: right; }
+    .bpCalendar .day--withEvent .event .eventTime {
+      margin: 0 0 .25rem .3rem;
+      color: #777;
+      font-weight: 800; }
+  .bpCalendar .day--otherMonth {
+    background: #f5f5f5;
+    color: #666; }
+
+/* ============================
+    Mobile Responsiveness
+   ============================*/
+@media screen and (max-width: 63.99875em) {
+  .bpCalendar .bpCalendar__dayNamesContainer, .bpCalendar .day--otherMonth {
+    display: none; }
+  .bpCalendar li {
+    height: auto !important;
+    border: 1px solid #ededed;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: -1px; }
+  .bpCalendar .date {
+    float: none !important; }
+  .bpCalendar .day {
+    display: none; }
+  .bpCalendar .day--withEvent {
+    display: block !important; }
+  .bpCalendar .button {
+    padding-left: 3rem;
+    padding-right: 3rem; } }
+
+.bpExpandingSearch {
+  display: inline-block;
+  outline: none;
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%; }
+  .bpExpandingSearch::-webkit-search-decoration, .bpExpandingSearch::-webkit-search-cancel-button {
+    display: none; }
+  .bpExpandingSearch__input {
+    background: transparent url("../img/icon-search-blue.png") no-repeat 9px center;
+    border: none;
+    padding: 3px 0px 2px 32px;
+    width: 56px;
+    border-radius: 10em;
+    transition: all .5s;
+    outline: none;
+    cursor: pointer;
+    line-height: 1.25;
+    color: #777;
+    /*
+  	width: 15px;
+  	padding-left: 10px;
+  	color: transparent;
+  	cursor: pointer;
+
+    &:hover {
+    	background-color: #fff;
+    }
+    &:focus {
+    	width: 130px;
+    	padding-left: 32px;
+    	color: #000;
+    	background-color: #fff;
+    	cursor: auto;
+    }
+    &:-moz-placeholder {color: transparent;}
+    &::-webkit-input-placeholder {color: transparent;}
+  */ }
+    .bpExpandingSearch__input:focus {
+      width: 11rem;
+      background-image: url("../img/icon-search-gray.png");
+      background-color: #222;
+      border: 1px solid #777;
+      cursor: text;
+      color: #fefefe;
+      -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+      -moz-box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+      box-shadow: 0 0 5px rgba(109, 207, 246, 0.5); }
+      .bpExpandingSearch__input:focus::placeholder {
+        color: #777; }
+      .bpExpandingSearch__input:focus::-moz-placeholder {
+        color: #777;
+        opacity: 1; }
+      .bpExpandingSearch__input:focus::-webkit-input-placeholder {
+        color: #777; }
+    .bpExpandingSearch__input::placeholder {
+      color: #fefefe; }
+    .bpExpandingSearch__input::-moz-placeholder {
+      color: #fefefe;
+      opacity: 1; }
+    .bpExpandingSearch__input::-webkit-input-placeholder {
+      color: #fefefe; }
+    .bpExpandingSearch__input::-webkit-search-cancel-button {
+      display: none; }
 
 .angels .bpTitleBar {
   background-color: #003263;

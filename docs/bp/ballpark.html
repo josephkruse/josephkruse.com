@@ -19,10 +19,12 @@
   <div class="grid-x grid-margin-x">
     <div class="cell">
 
-      <a href="#" data-open="searchModal"><i class="fas fa-search"></i> Search</a> |
+      <form class="bpExpandingSearch"><input type="search" placeholder="Search" class="bpExpandingSearch__input"></form>
+      |
+      <!--<a href="#" data-open="searchModal"><i class="fas fa-search"></i> Search</a> |-->
       <a href="#" class="hide-for-small-only"><i class="fas fa-envelope"></i> Contact</a> <span class="hide-for-small-only">|</span>
-      <a href="#" data-open="sendToFriendModal"><i class="fas fa-arrow-circle-up"></i> Send page to friend</a>
-
+      <a href="#" data-open="sendToFriendModal"><i class="fas fa-arrow-circle-up"></i> Send page to friend</a> |
+      <a href="#" style="font-size:1.25rem;padding:0;"><i class="fab fa-facebook-square" style="position: relative;top: 2px;margin-left: .125rem;"></i></a>
 
     </div>
   </div>
@@ -108,13 +110,13 @@
     </div>
   </div>
 </div><!--.bpNavigation-->
-<div class="grid-container bpTitleBar">
-  <div class="grid-x grid-padding-x">
-    <div class="cell large-9">
-      <h1 class="bpTitleBar__mainHeading">Angel Stadium - Los Angeles Angels</h1>
+<div class="bpTitleBar bpTitleBar--americanLeague">
+  <div class="grid-x">
+    <div class="cell small-9 medium-10">
+      <h1 class="bpTitleBar__mainHeading">Angel Stadium <small>| Los Angeles Angels</small></h1>
     </div>
-    <div class="cell large-3 text-right">
-      <a href="#" class="button bpTitleBar__storeButton">Ballpark Directory</a>
+    <div class="cell small-3 medium-2 text-center">
+      <a href="calendar.html" class="button bpTitleBar__button">Schedule</a>
     </div>
   </div>
 </div>
@@ -252,9 +254,6 @@
           <p><strong>Phone:</strong> 714-940-2000</p>
 
           <p><strong>Signature feature:</strong> <a href="#">The Big A</a></p>
-
-          <p><a href="#">2018 Angels Schedule</a><br>
-          <small>(home games only)</small></p>
 
           <h3>Field Facts</h3>
           <p><strong>Outfield Dimensions:</strong><br>
