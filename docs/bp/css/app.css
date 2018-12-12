@@ -4587,8 +4587,8 @@ h3 a:hover {
         font-size: 0.75rem; } }
     @media screen and (max-width: 39.99875em) {
       .bpTitleBar__button {
-        margin: .75rem auto 0;
-        font-size: 0.6rem; } }
+        font-size: 0.75rem;
+        margin: .5rem auto .25rem; } }
 
 .bpInfoBar--americanLeague {
   background-color: #d01414; }
