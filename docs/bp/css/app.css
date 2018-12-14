@@ -4321,10 +4321,18 @@ body {
     padding-right: 1rem; }
 
 h1.headingBar {
+  margin-top: .5rem;
   background: url("../img/title-pattern.png") repeat-x scroll 0 25px rgba(0, 0, 0, 0); }
+  @media screen and (max-width: 39.99875em) {
+    h1.headingBar {
+      background: url("../img/title-pattern.png") repeat-x scroll 0 5px rgba(0, 0, 0, 0); } }
 
 h2.headingBar {
+  margin-top: .5rem;
   background: url("../img/title-pattern.png") repeat-x scroll 0 1rem rgba(0, 0, 0, 0); }
+  @media screen and (max-width: 39.99875em) {
+    h2.headingBar {
+      background: url("../img/title-pattern.png") repeat-x scroll 0 0.125rem rgba(0, 0, 0, 0); } }
 
 h3, h3 a {
   color: #005297; }
@@ -4697,6 +4705,11 @@ pre {
       margin: .75rem 2rem 1rem; }
     .bpBallparkLayout__content > ul {
       margin: 1rem 1rem 1rem 2.5rem; }
+    @media screen and (max-width: 39.99875em) {
+      .bpBallparkLayout__content > table {
+        max-width: 100%;
+        overflow: scroll;
+        display: block; } }
     @media print, screen and (min-width: 40em) {
       .bpBallparkLayout__content {
         width: 65%;
