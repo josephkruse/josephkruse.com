@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baseball Pilgrimages 2019</title>
-  <link rel="stylesheet" href="css/app.css?v=1.2">
+  <link rel="stylesheet" href="app.css?v=1.3">
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/css/foundation.css">-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -41,7 +41,7 @@
   </div>
 </div><!--.bpHeader-->
 <div class="grid-container full bpNavigation bpNavigation--secondary">
-  <div class="grid-x grid-margin-x">
+  <div class="grid-x">
     <div class="cell">
 
       <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium" data-toggle>
@@ -109,35 +109,26 @@
 </div><!--.bpNavigation-->
 <div class="bpTitleBar bpTitleBar--americanLeague">
   <div class="grid-x">
-    <div class="cell small-9 medium-10">
+    <div class="cell medium-10">
       <h1 class="bpTitleBar__mainHeading">2019 Los Angeles Angels Home Schedule</h1>
     </div>
-    <div class="cell small-3 medium-2 text-center">
+    <div class="cell medium-2 text-center">
       <a href="ballpark.html" class="button bpTitleBar__button">Ballpark Info</a>
     </div>
   </div>
 </div>
 
-<div class="bpContent">
-  <div class="grid-x grid-padding-x">
-    <div class="cell xlarge-10">
 
-      <div class="grid-x grid-padding-x">
-        <div class="cell medium-8 large-9">
+<div class="bpLayout">
+  <div class="grid-x">
+    <div class="cell large-10 bpLayout__calendarContent">
 
-          <h3 class="text-center">All games played at Angel Stadium</h3>
+      <h3 class="text-center">All games played at Angel Stadium</h3>
 
-          <p class="text-center" style="margin-bottom:0;">All times listed are local (Pacific) and are subject to change.<br class="show-for-medium">
-            Schedule accurate as of April 11, 2018. Tickets links are to ScoreBig inventory.</p>
+      <p class="text-center" style="margin-bottom:0;">All times listed are local (Pacific) and are subject to change.<br class="show-for-medium">
+      <small>Schedule accurate as of April 11, 2018. Tickets links are to ScoreBig inventory.</small></p>
 
-        </div>
-        <div class="cell medium-4 large-3 text-center">
-
-            <img src="https://www.baseballpilgrimages.com/schedule/astadium.jpg">
-
-        </div>
-      </div>
-
+      <div class="text-center"><img src="https://www.baseballpilgrimages.com/schedule/astadium.jpg"></div>
 
       <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
         <li class="bpCalendar" data-accordion-item>
@@ -1040,9 +1031,8 @@
         </li>
       </ul>
 
-
     </div>
-    <div class="cell xlarge-2">
+    <div class="cell large-2 bpLayout__calendarSidebar">
 
       <div class="bpInfoBox bpInfoBox--nationalLeague bpInfoBox--small">
 
@@ -1078,10 +1068,961 @@
 
     </div>
   </div>
+  <!--<img src="img/angels.jpg" class="bpLayout__featuredImage">-->
 
-<br>
+  <div class="bpLayout__calendarContent">
 
-</div><!--.bpContent-->
+
+
+<h3 class="text-center">All games played at Angel Stadium</h3>
+
+<p class="text-center" style="margin-bottom:0;">All times listed are local (Pacific) and are subject to change.<br class="show-for-medium">
+<small>Schedule accurate as of April 11, 2018. Tickets links are to ScoreBig inventory.</small></p>
+
+<img src="https://www.baseballpilgrimages.com/schedule/astadium.jpg" class="text-center">
+
+<ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+  <li class="bpCalendar" data-accordion-item>
+    <a name="april"></a>
+    <a href="#" class="bpCalendar__titleHeading">April 2018</a>
+    <div class="accordion-content" data-tab-content>
+
+      <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+
+        <ul class="bpCalendar__dayNamesContainer">
+          <li class="bpCalendar__dayName">Sunday</li>
+          <li class="bpCalendar__dayName">Monday</li>
+          <li class="bpCalendar__dayName">Tuesday</li>
+          <li class="bpCalendar__dayName">Wednesday</li>
+          <li class="bpCalendar__dayName">Thursday</li>
+          <li class="bpCalendar__dayName">Friday</li>
+          <li class="bpCalendar__dayName">Saturday</li>
+        </ul>
+
+        <!-- Row #1 -->
+        <ul class="bpCalendar__weekContainer">
+
+          <!-- Days from previous month -->
+          <li class="day">
+            <div class="dayForMobile">Sunday, April</div>
+            <div class="dayDate">1</div>
+          </li>
+
+          <!-- Days in current month -->
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Monday, April</div>
+              <div class="dayDate">2</div>
+              <div class="event">
+                  <h5>Indians <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Tuesday, April</div>
+              <div class="dayDate">3</div>
+              <div class="event">
+                  <h5>Indians <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+            <div class="dayForMobile">Wednesday, April</div>
+              <div class="dayDate">4</div>
+              <div class="event">
+                  <h5>Indians <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">1:07</p>
+                </div>
+          </li>
+          <li class="day">
+            <div class="dayForMobile">Thursday, April</div>
+              <div class="dayDate">5</div>
+          </li>
+          <li class="day day--withEvent">
+            <div class="dayForMobile">Friday, April</div>
+              <div class="dayDate">6</div>
+              <div class="event">
+                  <h5>A's <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+            <div class="dayForMobile">Saturday, April</div>
+              <div class="dayDate">7</div>
+              <div class="event">
+                  <h5>A's <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">6:07</p>
+                </div>
+          </li>
+        </ul>
+
+        <!-- Row #2 -->
+        <ul class="bpCalendar__weekContainer">
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Tuesday, April</div>
+              <div class="dayDate">8</div>
+              <div class="event">
+                  <h5>A's <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">6:07</p>
+                </div>
+          </li>
+          <li class="day">
+              <div class="dayDate">9</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">10</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">11</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">12</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">13</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">14</div>
+          </li>
+        </ul>
+
+        <!-- Row #3 -->
+        <ul class="bpCalendar__weekContainer">
+          <li class="day">
+              <div class="dayDate">15</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">16</div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Tuesday, April</div>
+              <div class="dayDate">17</div>
+              <div class="event">
+                  <h5>Red Sox <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Wednesday, April</div>
+              <div class="dayDate">18</div>
+              <div class="event">
+                  <h5>Red Sox <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Thursday, April</div>
+              <div class="dayDate">19</div>
+              <div class="event">
+                  <h5>Red Sox <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Friday, April</div>
+              <div class="dayDate">20</div>
+              <div class="event">
+                  <h5>Giants <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Saturday, April</div>
+              <div class="dayDate">21</div>
+              <div class="event">
+                  <h5>Giants <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">6:07</p>
+                </div>
+          </li>
+        </ul>
+
+        <!-- Row #4 -->
+        <ul class="bpCalendar__weekContainer">
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Sunday, April</div>
+              <div class="dayDate">22</div>
+              <div class="event">
+                  <h5>Giants <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">6:07</p>
+                </div>
+          </li>
+          <li class="day">
+              <div class="dayDate">23</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">24</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">25</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">26</div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Friday, April</div>
+              <div class="dayDate">27</div>
+              <div class="event">
+                  <h5> <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Saturday, April</div>
+              <div class="dayDate">28</div>
+              <div class="event">
+                  <h5> <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+        </ul>
+
+        <!-- Row #5 -->
+        <ul class="bpCalendar__weekContainer">
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Sunday, April</div>
+              <div class="dayDate">29</div>
+              <div class="event">
+                  <h5>Yankees <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+        </ul>
+
+
+    </div>
+  </li>
+  <li class="bpCalendar accordion-item" data-accordion-item>
+    <a name="map"></a>
+    <a href="#" class="bpCalendar__titleHeading accordion-title">May 2018</a>
+    <div class="accordion-content" data-tab-content>
+
+      <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+
+      <ul class="bpCalendar__dayNamesContainer">
+        <li class="bpCalendar__dayName">Sunday</li>
+        <li class="bpCalendar__dayName">Monday</li>
+        <li class="bpCalendar__dayName">Tuesday</li>
+        <li class="bpCalendar__dayName">Wednesday</li>
+        <li class="bpCalendar__dayName">Thursday</li>
+        <li class="bpCalendar__dayName">Friday</li>
+        <li class="bpCalendar__dayName">Saturday</li>
+      </ul>
+
+      <!-- Row #1 -->
+      <ul class="bpCalendar__weekContainer">
+
+        <!-- Days from previous month -->
+        <li class="day day--otherMonth"></li>
+        <li class="day day--otherMonth"></li>
+
+        <!-- Days in current month -->
+        <li class="day day--withEvent">
+            <div class="dayDate">1</div>
+            <div class="event">
+                <h5>Orioles</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+        <li class="day day--withEvent">
+            <div class="dayDate">2</div>
+            <div class="event">
+                <h5>Orioles</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+        <li class="day day--withEvent">
+            <div class="dayDate">3</div>
+            <div class="event">
+                <h5>Orioles</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+        <li class="day">
+            <div class="dayDate">4</div>
+        </li>
+        <li class="day">
+            <div class="dayDate">5</div>
+        </li>
+      </ul>
+
+      <!-- Row #2 -->
+      <ul class="bpCalendar__weekContainer">
+        <li class="day">
+            <div class="dayDate">6</div>
+        </li>
+        <li class="day">
+            <div class="dayDate">7</div>
+        </li>
+        <li class="day">
+            <div class="dayDate">8</div>
+        </li>
+        <li class="day">
+            <div class="dayDate">9</div>
+        </li>
+        <li class="day day--withEvent">
+            <div class="dayDate">10</div>
+            <div class="event">
+                <h5>Twins</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+        <li class="day day--withEvent">
+            <div class="dayDate">11</div>
+            <div class="event">
+                <h5>Twins</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+        <li class="day day--withEvent">
+            <div class="dayDate">12</div>
+            <div class="event">
+                <h5>Twins</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+      </ul>
+
+      <!-- Row #3 -->
+      <ul class="bpCalendar__weekContainer">
+        <li class="day day--withEvent">
+            <div class="dayDate">13</div>
+            <div class="event">
+                <h5>Twins</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+        <li class="day day--withEvent">
+            <div class="dayDate">14</div>
+            <div class="event">
+                <h5>Astros</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+        <li class="day day--withEvent">
+            <div class="dayDate">15</div>
+            <div class="event">
+                <h5>Astros</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+        <li class="day day--withEvent">
+            <div class="dayDate">16</div>
+            <div class="event">
+                <h5>Astros</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+        <li class="day day--withEvent">
+            <div class="dayDate">17</div>
+            <div class="event">
+                <h5>Rays</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+        <li class="day day--withEvent">
+            <div class="dayDate">18</div>
+            <div class="event">
+                <h5>Rays</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+        <li class="day day--withEvent">
+            <div class="dayDate">19</div>
+            <div class="event">
+                <h5>Rays</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+      </ul>
+
+      <!-- Row #4 -->
+      <ul class="bpCalendar__weekContainer">
+        <li class="day day--withEvent">
+            <div class="dayDate">20</div>
+            <div class="event">
+                <h5>Rays</h5>
+                <a href="#" class="button tiny">Tickets</a>
+                <p class="eventTime">7:07</p>
+              </div>
+        </li>
+        <li class="day">
+            <div class="dayDate">21</div>
+        </li>
+        <li class="day">
+            <div class="dayDate">22</div>
+        </li>
+        <li class="day">
+            <div class="dayDate">23</div>
+        </li>
+        <li class="day">
+            <div class="dayDate">24</div>
+        </li>
+        <li class="day">
+            <div class="dayDate">25</div>
+        </li>
+        <li class="day">
+            <div class="dayDate">26</div>
+        </li>
+      </ul>
+
+      <!-- Row #5 -->
+      <ul class="bpCalendar__weekContainer">
+        <li class="day">
+            <div class="dayDate">27</div>
+        </li>
+        <li class="day">
+            <div class="dayDate">28</div>
+        </li>
+        <li class="day">
+            <div class="dayDate">29</div>
+        </li>
+        <li class="day">
+            <div class="dayDate">30</div>
+        </li>
+        <li class="day">
+            <div class="dayDate">31</div>
+        </li>
+        <li class="day day--otherMonth"></li>
+        <li class="day day--otherMonth"></li>
+      </ul>
+  </li>
+  <li class="bpCalendar accordion-item is-active" data-accordion-item>
+    <a name="june"></a>
+    <a href="#" class="bpCalendar__titleHeading accordion-title">June 2018</a>
+    <div class="accordion-content" data-tab-content>
+
+      <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+
+        <ul class="bpCalendar__dayNamesContainer">
+          <li class="bpCalendar__dayName">Sunday</li>
+          <li class="bpCalendar__dayName">Monday</li>
+          <li class="bpCalendar__dayName">Tuesday</li>
+          <li class="bpCalendar__dayName">Wednesday</li>
+          <li class="bpCalendar__dayName">Thursday</li>
+          <li class="bpCalendar__dayName">Friday</li>
+          <li class="bpCalendar__dayName">Saturday</li>
+        </ul>
+
+        <!-- Row #1 -->
+        <ul class="bpCalendar__weekContainer">
+
+          <!-- Days from previous month -->
+          <li class="day">
+            <div class="dayForMobile">Sunday, April</div>
+            <div class="dayDate">1</div>
+          </li>
+
+          <!-- Days in current month -->
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Monday, April</div>
+              <div class="dayDate">2</div>
+              <div class="event">
+                  <h5>Indians <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Tuesday, April</div>
+              <div class="dayDate">3</div>
+              <div class="event">
+                  <h5>Indians <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+            <div class="dayForMobile">Wednesday, April</div>
+              <div class="dayDate">4</div>
+              <div class="event">
+                  <h5>Indians <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">1:07</p>
+                </div>
+          </li>
+          <li class="day">
+            <div class="dayForMobile">Thursday, April</div>
+              <div class="dayDate">5</div>
+          </li>
+          <li class="day day--withEvent">
+            <div class="dayForMobile">Friday, April</div>
+              <div class="dayDate">6</div>
+              <div class="event">
+                  <h5>A's <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+            <div class="dayForMobile">Saturday, April</div>
+              <div class="dayDate">7</div>
+              <div class="event">
+                  <h5>A's <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">6:07</p>
+                </div>
+          </li>
+        </ul>
+
+        <!-- Row #2 -->
+        <ul class="bpCalendar__weekContainer">
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Tuesday, April</div>
+              <div class="dayDate">8</div>
+              <div class="event">
+                  <h5>A's <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">6:07</p>
+                </div>
+          </li>
+          <li class="day">
+              <div class="dayDate">9</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">10</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">11</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">12</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">13</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">14</div>
+          </li>
+        </ul>
+
+        <!-- Row #3 -->
+        <ul class="bpCalendar__weekContainer">
+          <li class="day">
+              <div class="dayDate">15</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">16</div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Tuesday, April</div>
+              <div class="dayDate">17</div>
+              <div class="event">
+                  <h5>Red Sox <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Wednesday, April</div>
+              <div class="dayDate">18</div>
+              <div class="event">
+                  <h5>Red Sox <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Thursday, April</div>
+              <div class="dayDate">19</div>
+              <div class="event">
+                  <h5>Red Sox <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Friday, April</div>
+              <div class="dayDate">20</div>
+              <div class="event">
+                  <h5>Giants <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Saturday, April</div>
+              <div class="dayDate">21</div>
+              <div class="event">
+                  <h5>Giants <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">6:07</p>
+                </div>
+          </li>
+        </ul>
+
+        <!-- Row #4 -->
+        <ul class="bpCalendar__weekContainer">
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Sunday, April</div>
+              <div class="dayDate">22</div>
+              <div class="event">
+                  <h5>Giants <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">6:07</p>
+                </div>
+          </li>
+          <li class="day">
+              <div class="dayDate">23</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">24</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">25</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">26</div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Friday, April</div>
+              <div class="dayDate">27</div>
+              <div class="event">
+                  <h5> <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Saturday, April</div>
+              <div class="dayDate">28</div>
+              <div class="event">
+                  <h5> <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+        </ul>
+
+        <!-- Row #5 -->
+        <ul class="bpCalendar__weekContainer">
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Sunday, April</div>
+              <div class="dayDate">29</div>
+              <div class="event">
+                  <h5>Yankees <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+        </ul>
+
+
+    </div>
+  </li>
+  <li class="bpCalendar accordion-item is-active" data-accordion-item>
+    <a name="july"></a>
+    <a href="#" class="bpCalendar__titleHeading accordion-title">July 2018</a>
+    <div class="accordion-content" data-tab-content>
+
+      <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+
+        <ul class="bpCalendar__dayNamesContainer">
+          <li class="bpCalendar__dayName">Sunday</li>
+          <li class="bpCalendar__dayName">Monday</li>
+          <li class="bpCalendar__dayName">Tuesday</li>
+          <li class="bpCalendar__dayName">Wednesday</li>
+          <li class="bpCalendar__dayName">Thursday</li>
+          <li class="bpCalendar__dayName">Friday</li>
+          <li class="bpCalendar__dayName">Saturday</li>
+        </ul>
+
+        <!-- Row #1 -->
+        <ul class="bpCalendar__weekContainer">
+
+          <!-- Days from previous month -->
+          <li class="day">
+            <div class="dayForMobile">Sunday, April</div>
+            <div class="dayDate">1</div>
+          </li>
+
+          <!-- Days in current month -->
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Monday, April</div>
+              <div class="dayDate">2</div>
+              <div class="event">
+                  <h5>Indians <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Tuesday, April</div>
+              <div class="dayDate">3</div>
+              <div class="event">
+                  <h5>Indians <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+            <div class="dayForMobile">Wednesday, April</div>
+              <div class="dayDate">4</div>
+              <div class="event">
+                  <h5>Indians <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">1:07</p>
+                </div>
+          </li>
+          <li class="day">
+            <div class="dayForMobile">Thursday, April</div>
+              <div class="dayDate">5</div>
+          </li>
+          <li class="day day--withEvent">
+            <div class="dayForMobile">Friday, April</div>
+              <div class="dayDate">6</div>
+              <div class="event">
+                  <h5>A's <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+            <div class="dayForMobile">Saturday, April</div>
+              <div class="dayDate">7</div>
+              <div class="event">
+                  <h5>A's <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">6:07</p>
+                </div>
+          </li>
+        </ul>
+
+        <!-- Row #2 -->
+        <ul class="bpCalendar__weekContainer">
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Tuesday, April</div>
+              <div class="dayDate">8</div>
+              <div class="event">
+                  <h5>A's <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">6:07</p>
+                </div>
+          </li>
+          <li class="day">
+              <div class="dayDate">9</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">10</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">11</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">12</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">13</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">14</div>
+          </li>
+        </ul>
+
+        <!-- Row #3 -->
+        <ul class="bpCalendar__weekContainer">
+          <li class="day">
+              <div class="dayDate">15</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">16</div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Tuesday, April</div>
+              <div class="dayDate">17</div>
+              <div class="event">
+                  <h5>Red Sox <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Wednesday, April</div>
+              <div class="dayDate">18</div>
+              <div class="event">
+                  <h5>Red Sox <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Thursday, April</div>
+              <div class="dayDate">19</div>
+              <div class="event">
+                  <h5>Red Sox <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Friday, April</div>
+              <div class="dayDate">20</div>
+              <div class="event">
+                  <h5>Giants <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Saturday, April</div>
+              <div class="dayDate">21</div>
+              <div class="event">
+                  <h5>Giants <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">6:07</p>
+                </div>
+          </li>
+        </ul>
+
+        <!-- Row #4 -->
+        <ul class="bpCalendar__weekContainer">
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Sunday, April</div>
+              <div class="dayDate">22</div>
+              <div class="event">
+                  <h5>Giants <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">6:07</p>
+                </div>
+          </li>
+          <li class="day">
+              <div class="dayDate">23</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">24</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">25</div>
+          </li>
+          <li class="day">
+              <div class="dayDate">26</div>
+          </li>
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Friday, April</div>
+              <div class="dayDate">27</div>
+              <div class="event">
+                  <h5> <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Saturday, April</div>
+              <div class="dayDate">28</div>
+              <div class="event">
+                  <h5> <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+        </ul>
+
+        <!-- Row #5 -->
+        <ul class="bpCalendar__weekContainer">
+          <li class="day day--withEvent">
+              <div class="dayForMobile">Sunday, April</div>
+              <div class="dayDate">29</div>
+              <div class="event">
+                  <h5>Yankees <div class="homeTeamForMobile">@ LA</div></h5>
+                  <a href="#" class="button tiny">Tickets</a>
+                  <p class="eventTime">7:07</p>
+                </div>
+          </li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+          <li class="day day--otherMonth"></li>
+        </ul>
+
+
+    </div>
+  </li>
+</ul>
+
+
+
+
+  </div>
+  <div class="bpLayout__calendarSidebar">
+
+    <div class="bpInfoBox bpInfoBox--nationalLeague bpInfoBox--small">
+
+      <h3>Schedule Breakdown</h3>
+
+      <p><strong>Games by month</strong><br>
+      15 in <a href="#april">April</a><br>
+      14 in <a href="#may">May</a><br>
+      12 in <a href="#june">June</a><br>
+      16 in <a href="#july">July</a><br>
+      11 in <a href="#august">August</a><br>
+      13 in <a href="#september">September</a></p>
+
+      <p><strong>39 games during the week</strong><br>
+       9 on Monday<br>
+      12 on Tuesday<br>
+      10 on Wednesday<br>
+       8 on Thursday</p>
+
+      <p><strong>42 games on weekends</strong><br>
+      14 each on Friday, Saturday and Sunday
+
+    </div>
+    <div class="bpInfoBox bpInfoBox--small">
+
+      <h3>Interleague opponents</h3>
+      <strong>Giants</strong><br> on April 20-22<br><br>
+      <strong>Diamondbacks</strong><br> on June 18-19<br><br>
+      <strong>Dodgers</strong><br> on July 6-8<br><br>
+      <strong>Rockies</strong><br> on August 27-28</p>
+
+    </div>
+
+
+  </div>
+</div>
 
 <div class="grid-container bpFooter">
   <div class="grid-x grid-margin-x">
@@ -1152,7 +2093,7 @@
   <div style="clear:both;"></div>
 </div><!--.bpFooter-->
 <div class="grid-container bpCopyrightLine">
-  <div class="grid-x grid-margin-x">
+  <div class="grid-x">
     <div class="cell text-center">
 
       <div class="bpCopyrightLidne__text">Copyright © 2018 Baseball Enterprises, Inc. All Rights Reserved</div>

@@ -4,1324 +4,542 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baseball Pilgrimages 2019</title>
-  <link rel="stylesheet" href="css/app.css?v=1.3">
+  <title>Baseball Pilgrimages Kitchen Sink</title>
+  <link rel="stylesheet" href="app.css?v=1.3">
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/css/foundation.css">-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="icon" type="image/png" href="img/favicon.png">
-
+  <style>
+  pre{padding:.5rem 1rem;}
+  .callout{padding:0;}
+  .bpLayout {min-height: 100px;}
+  </style>
 </head>
 <body>
 
-<div class="grid-container bpUpperBar">
-  <div class="grid-x grid-margin-x">
+<div class="bpUpperBar">
+  <div class="grid-x">
     <div class="cell">
 
-      <form class="bpExpandingSearch"><input type="search" placeholder="Search" class="bpExpandingSearch__input"></form>
-      |
-      <!--<a href="#" data-open="searchModal"><i class="fas fa-search"></i> Search</a> |-->
-      <a href="#" class="hide-for-small-only"><i class="fas fa-envelope"></i> Contact</a> <span class="hide-for-small-only">|</span>
-      <a href="#" data-open="sendToFriendModal"><i class="fas fa-arrow-circle-up"></i> Send page to friend</a> |
-      <a href="#" style="font-size:1.125rem;padding:0;"><i class="fab fa-facebook-square" style="position: relative;top: 2px;margin-left: .125rem;"></i></a>
+  <br>
 
     </div>
   </div>
 </div><!--.bpUpperBar-->
-<div class="grid-container bpHeader">
-  <div class="grid-x grid-margin-x">
+<div class="bpHeader">
+  <div class="grid-x">
     <div class="cell">
 
-      <div class="bpHeader__bpLogo">
-
-        <div class="bpHeader__bpTitle"><img src="img/header-icon-sm.png" class="bpHeader_icon"> Baseball Pilgrimages</div>
-        <div class="bpHeader__bpSubtitle">Where the persuit of baseball never ends.</div>
-      </div>
-
+      <a href="#" class="bpHeader__bpLogo">
+        <div class="bpHeader__bpTitle"><img src="http://newer.baseballpilgrimages.com/wp-content/themes/baseballpilgrimages/img/header-icon-sm.png" class="bpHeader_icon" > Baseball Pilgrimages</div>
+        <div class="bpHeader__bpSubtitle">Where the pursuit of baseball never ends.</div>
+      </a>
 
     </div>
   </div>
 </div><!--.bpHeader-->
-<div class="grid-container full bpNavigation bpNavigation--secondary">
-  <div class="grid-x grid-margin-x">
+<div class="bpTitleBar" style="border-top: 1px solid #e1e1e1;">
+  <div class="grid-x">
     <div class="cell">
-
-      <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium" data-toggle>
-        <a href="#" class="bpNavigation__navToggle" data-toggle style="display:block;">
-          <button class="menu-icon" type="button"></button>
-          <div class="title-bar-title">Menu</div>
-        </a>
-      </div>
-
-      <div class="top-bar" id="main-menu">
-        <div class="top-bar-left hide-for-medium">
-          <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text hide">Site Title</li>
-          </ul>
-        </div>
-        <div class="top-bar-left">
-          <ul class="menu vertical medium-horizontal expanded" data-responsive-menu="drilldown medium-dropdown">
-            <li class="has-submenu">
-              <a href="ballpark-list.html" class="bpNavigation__topLevelItem">Major League</a>
-              <ul class="submenu menu vertical" data-submenu>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Angel Stadium -	Los Angeles Angels</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Globe Life Park -	Texas Rangers</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Camden Yards - Baltimore Orioles</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Fenway Park - Boston Red Sox</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Guaranteed Rate Field - Chicago White Sox</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Progressive Field - Cleveland Indians</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Comerica Park - Detroit Tigers</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Minute Maid Park - Houston Astros</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Kauffman Stadium - Kansas City Royals</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Target Field - Minnesota Twins</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Yankee Stadium - New York Yankees</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Oakland Coliseum - Oakland A's</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Safeco Field - Seattle Mariners</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Tropicana Field - Tampa Bay Rays</a></li>
-                <li><a href="ballpark.html" class="bpNavigation__childLevelItem">Rogers Centre - Toronto Blue Jays</a></li>
-              </ul>
-            </li>
-            <li><a href="ballpark-list.html" class="bpNavigation__topLevelItem">Spring Training</a></li>
-            <li><a href="ballpark-list.html" class="bpNavigation__topLevelItem">Minor League</a></li>
-            <li><a href="#0" class="bpNavigation__topLevelItem">Schedules</a></li>
-            <li><a href="#0" class="bpNavigation__topLevelItem">Attendance</a></li>
-            <li class="has-submenu">
-              <a href="#0" class="bpNavigation__topLevelItem">Features</a>
-              <ul class="submenu menu vertical" data-submenu>
-                <li><a href="#0" class="bpNavigation__childLevelItem">Major LeagueBallpark Tours</a></li>
-                <li><a href="#0" class="bpNavigation__childLevelItem">Memorable Ballpark Experiences</a></li>
-                <li><a href="#0" class="bpNavigation__childLevelItem">Ballpark Traditions</a></li>
-                <li><a href="#0" class="bpNavigation__childLevelItem">Former Ballparks</a></li>
-                <li><a href="#0" class="bpNavigation__childLevelItem">Interviews</a></li>
-                <li><a href="#0" class="bpNavigation__childLevelItem">Baseball's Most Unique Ballpark Features</a></li>
-                <li><a href="#0" class="bpNavigation__childLevelItem">Top 5 Major League ballparks</a></li>
-                <li><a href="#0" class="bpNavigation__childLevelItem">Baseball Road Trips</a></li>
-                <li><a href="#0" class="bpNavigation__childLevelItem">Ballpark Book Excerpts</a></li>
-                <li><a href="#0" class="bpNavigation__childLevelItem">Ballpark Photo Galleries</a></li>
-              </ul>
-            </li>
-            <li><a href="#0" class="bpNavigation__topLevelItem">Store</a></li>
-            <li><a href="#0" class="bpNavigation__topLevelItem show-for-small-only">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div><!--.bpNavigation-->
-
-<!-- ===================================================== Color Schemes ===================================================== -->
-
-
-
-<div class="bpTitleBar bpTitleBar--americanLeague">
-  <div class="grid-x">
-    <div class="cell small-9 medium-10">
-      <h1 class="bpTitleBar__mainHeading">Angel Stadium <small>| Los Angeles Angels</small></h1>
-    </div>
-    <div class="cell small-3 medium-2 text-center">
-      <a href="calendar.html" class="button bpTitleBar__button">Schedule</a>
+      <h1 class="bpTitleBar__mainHeading" style="text-align:center;">Kitchen Sink</h1>
     </div>
   </div>
 </div>
 
-<div class="grid-container bpInfoBar bpInfoBar--americanLeague">
-  <div class="grid-x grid-padding-x">
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Opened:</strong> 1966</p>
-    </div>
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Capacity:</strong> 45,050</p>
-    </div>
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Elevation:</strong> 149'</p>
-    </div>
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Signature feature:</strong> <a href="#biga">The Big A</a></p>
-    </div>
 
-
-
-  </div>
-</div>
-
-<div class="bpBallparkLayout">
-
-  <img src="img/angels.jpg" class="bpBallparkLayout__featuredImage">
-
-  <div class="bpBallparkLayout__sidebar">
-
-    <div class="bpInfoBox bpInfoBox--red">
-      <h3>Field Facts</h3>
-      <p><strong>Outfield Dimensions:</strong><br>
-      LF: 330' CF: 400' RF: 330'</p>
-      <p><strong>Playing Surface:</strong><br>
-      Tifway 419 bermudagrass</p>
-      <p><strong>Home Dugout:</strong><br>
-      3rd Base</p>
-    </div>
-
-    <div class="bpInfoBox bpInfoBox--border">
-      <h3>Stadium Staff</h3>
-      <p><strong>PA Announcer:</strong><br>
-      Michael Araujo</p>
-      <p><strong>Organist: </strong>none</p>
-      <p><strong>Head Groundskeeper:</strong><br>
-      Barney Lopas</p>
-      <p><strong>Concessionaire:</strong><br>
-      Legends Hospitality</p>
-    </div>
-
-    <div class="bpInfoBox text-center">
-      <h3>Angels Store</h3>
-
-      <img src="https://www.baseballpilgrimages.com/aerials/anaheim.jpg" style="max-width:300px;" class="margin-bottom">
-
-      <p><strong>Angel Stadium - Anaheim Aerial Poster</strong><br>
-      The spectacular overhead view of Angel Stadium was taken during an afternoon game in 2003 by noted sports aerial photographer Mike Smith.</p>
-    </div>
-
-    <div class="text-center"><a href="#" class="button"><i class="fas fa-ticket-alt"></i> Tickets</a></div>
-
-
-  </div>
-  <div class="bpBallparkLayout__content">
-
-    <p>The Angels renaissance to the upper echelon of Major League Baseball began with the complete renovation of their ballpark in Anaheim.</p>
-    <p>Anaheim Stadium opened as a baseball-only facility in 1966, but morphed into a multipurpose stadium in 1980 to lure the NFL's Rams away from the Los Angeles Coliseum.  When the Rams left for St. Louis in 1995, city officials and Angels ownership devised a plan to return the stadium to its baseball-only roots (at almost five times the cost of original construction).</p>
-    <p>With the aid of famed ballpark architectural firm HOK Sport, the downsized and redesigned stadium, christened as Edison International Field of Anaheim, was ready by Opening Day in 1998.</p>
-    <p>Renovations, which included the removal of 20,000 seats in the outfield that had enclosed the stadium, gave the three decades old venue a new life.</p>
-    <p>An enhanced main entrance plaza was created behind home plate, where two enormous Angels hats provide shade and a meeting place for fans before the game.  The ballpark’s name – Angel Stadium of Anaheim – is elevated above the plaza via six oversized wood bats.  Palm trees encircle the stadium’s exterior, which is fairly non-descript besides the main home plate entrance.</p>
-
-    <img src="https://www.baseballpilgrimages.com/american/anaheimstadium.jpg" class="float-right" style="margin:1rem;" alt="Angel Stadium of Anaheim main entrance plaza">
-
-    <p>Nestled among freeways and office parks, the stadium is fully surrounded by parking lots on a 140-acre expanse of suburban land.  The stadium’s beloved signature feature, the 230 foot high <a href="#biga">Big A sign</a>, stands at the eastern boundary of the parking next to the Orange Freeway. The iconic Angels landmark is a hotspot for tailgating but can only be seen from inside the ballpark by fans sitting in the sections between third base and the left field foul pole.</p>
-    <p>What all fans can see is the “Outfield Extravaganza” that was created to be the ballpark’s signature piece.  Built slightly left of center field, the extravaganza is supposed to be a model of the rocky California coastline and has a running stream of water cascading over artificial rocks.  The mountainside scene is complete with real trees and a geyser that erupts 90 feet in the air. Fireworks are shot off from the display when the Angels line-up is announced, when an Angel hits a home run, and after every Angels win.</p>
-    <p>The extravaganza's cascading waterfalls are the focal point inside the stadium, but fans sitting in the upper deck have plenty to view on the horizon.</p>
-    <p>The Honda Center, home of the Stanley Cup champion Anaheim Ducks, is in the immediate foreground behind the outfield extravaganza.  Between the hockey arena and baseball stadium, the heavily trafficked State Highway 57 is visible, as is an office building.</p>
-    <p>The only detectable exception to the reminders of the ballpark’s central suburban location are the San Gabriel and Santa Ana Mountains, part of the panoramic landscape that can be seen in the distance.</p>
-    <p>Plenty of jokes have been made about the team’s name change (to Los Angeles Angels of Anaheim) in 2005, but the sole reference to Los Angeles in the stadium is atop the right field scoreboard, in the form of a <i>Los Angeles Times</i> ad.  The large main scoreboard towers above the uniquely shaped right field pavilion, a formerly expandable section that was constructed when the stadium was enclosed for football.  Six retired numbers, including #26 for original owner Gene Autry, are directly beneath the scoreboard.</p>
-    <p>A smaller scoreboard is behind the equally smaller left field pavilion. The two pavilion sections are broken up by the outfield extravaganza and a large chunk of seats that are covered with a green tarp for the hitter’s backdrop.</p>
-    <p>The left and right field pavilion sections give the stadium a full look and the separate wide concourses behind both provide the only good standing room vantage points in the stadium.</p>
-    <p>Thanks to a small scoreboard behind home plate, fans sitting or standing in the outfield don’t have to crane their necks to get game information.  This mini-scoreboard, unique in MLB for its location, is below the press box and above the exclusive open-air Diamond Club Restaurant, one of three full-service club restaurants in the stadium.</p>
-    <p>An electrically operated out-of-town scoreboard is on the right field wall, the terraced bullpens are behind the plexiglas wall in left, and both walls next to the foul poles are lowered and roundly angled to put fans on top of the action down the lines.</p>
-    <p>The Pepsi Perfect Game Pavilion features interactive baseball-style games for kids and is located in right field along the terrace level concourse, which allows fans to circle the ballpark entirely.</p>
-    <p>One of the only real nuisances of the relatively simple three-level stadium is the winding ramps fans have to walk up to get to the club level and upper deck.  Also, the right field pavilion has difficult and confusing access.</p>
-    <p>Concession options are plentiful and include a Panda Express Chinese restaurant, which is actually located near first base, a good distance away from the Panda Express sign that graces the roof of the concession stands in the left field pavilion.</p>
-    <p>The 2002 World Series trophy is on public display, encased in glass, on the main concourse in front of the team store directly behind home plate.</p>
-    <p>Winning the World Series converted the Angels from local afterthought – <a href="../national/losangeles.html">Dodger Stadium</a> is only 27 miles away – to a marquee franchise that is one of the top draws in Major League Baseball.</p>
-    <p>Thanks to a season ticket base that has grown from 12,000 to 30,000 since the Angels lone championship, their Anaheim ballpark is now packed on a nightly basis.</p>
-    <p>The fan support has improved the experience at Angel Stadium, making it a fun place to watch a game and, combined with the 1998 renovations, a worthy destination in an area awash with entertainment options.</p>
-
-    <a name="biga"></a>
-    <h2 class="headingBar"><span>The Big A</span></h2>
-    <img src="https://www.baseballpilgrimages.com/american/biga.jpg" class="float-right" style="margin:1rem;" alt="The Big A is next to the Orange Freeway">
-    <p>When Anaheim Stadium opened in 1966 it featured a 230-foot high letter "A" - complete with halo - that served as the main scoreboard's support.</p>
-    <p>The 23-story, 210-ton sign stood behind left field until the stadium’s 1980 expansion necessitated its removal to the outskirts of the parking lot, some 1,300 feet away, where it has since become a Southern California landmark.</p>
-    <p>With a price tag of one million dollars the original cost of the Big A wasn't cheap either, but its construction was paid for by the Standard Oil Co. of California in exchange for advertising rights.</p>
-    <p>When the stadium was being renovated back to baseball-only designers briefly considered moving the Big A back to its original location, before scrapping the idea due to costs.</p>
-    <p>Today, the Big A has an electronic marquee on one of its sides that displays ads to cars passing by on the Orange Freeway, while the halo is illuminated after an Angels victory.</p>
-    <p><b>Stadium Nickname</b></p>
-    <p>Because of the A-frame scoreboard, Anaheim Stadium became known as the "Big A," a moniker that is still used to reference the stadium today.</p>
-
-    <h2 class="headingBar"><span>Ballpark History</span></h2>
-    <p>The Angels franchise began in 1961, playing their first season in Wrigley Field, a 20,500-seat minor league ballpark in Los Angeles that was home to the original Los Angeles Angels of the Pacific Coast League.</p>
-    <p>When Dodger Stadium opened in 1962, the Angels signed a four-year lease with the Dodgers to use their stadium, which the Angels called Chávez Ravine Stadium during their tenure. For rent, the Angels paid 7.5 percent of gross attendance revenues.  The Dodgers also received half of the Angels' concession gross and all parking revenues.</p>
-    <p>Angels owner Gene Autry had no desire to play second fiddle to the Dodgers in <a href="../national/losangeles.html">Los Angeles</a>, so he pursued a stadium for his team in the LA suburbs.  The Angels almost found a home in Long Beach, but negotiations ultimately broke down when the city insisted the team had to be called the Long Beach Angels.</p>
-    <p>Autry finally settled on Anaheim, which only had a population of 150,000 at the time, but was an attractive choice because 7 million people lived within 50 miles of where the stadium was to be built (on 140 acres of land previously occupied by four farms).</p>
-    <p>Construction began on August 31, 1964 and, despite a work stoppage and strikes, Anaheim Stadium was completed in time for Opening Day in 1966 at a cost of $24 million.</p>
-    <p>The stadium had an original capacity of 43,204 (but no outfield seats) when the newly renamed California Angels played the San Francisco Giants in an exhibition game on April 9, 1966.  The first regular season game occurred ten days later against the Chicago White Sox.</p>
-    <p>To accommodate the NFL's Los Angeles Rams, Anaheim Stadium underwent construction in 1979-80 that completely enclosed it and increased capacity for baseball to 64,593. The Rams made their debut on September 7, 1980, but left Anaheim for St. Louis following the 1994 season.</p>
-    <p>Renovations to Anaheim Stadium began October 1, 1996 and seating capacity was reduced to 33,851 in 1997 while construction continued throughout the year.</p></p>
-    <p>The Angels played in the oversized multi-purpose facility for another two years before Disney took controlling interest in the team in 1996 and immediately decided to return the stadium to a baseball-only venue.
-    <p>The extensive renovations cost $118 million, of which the Angels paid $88 million and the city of Anaheim $30 million.  Included in the cost were earthquake damage repairs and replacing the stadium's multicolored seats with green seats.</p>
-    <p>The renovations were completed in time for the team, then renamed the Anaheim Angles, to play the Yankees on April 1, 1998.</p>
-    <p>By then, the stadium had been  renamed to Edison International Field, after the California-based public utility holding company signed a $50 million, 20-year sponsorship deal on September 15, 1997.</p>
-    <p>After the 2003 season, Edison International exercised its option to exit the sponsorship deal and on December 29 of that year it was announced that the city-owned stadium would be renamed Angel Stadium of Anaheim.</p>
-
-    <h3>Location and Parking</h3>
-    <p>Built near the intersection of three freeways, Angel Stadium is easy to access and spot.  The stadium has a massive parking lot with 12,500 spaces.  It’s cheaper, and easier to get back on the freeway after the game, if you park in one of the office complexes across the street from the stadium.   A great option is the Orange County's Credit Union building on Orange Avenue, where it costs just $5 to park.</p>
-
-    <h3>Game Atmosphere</h3>
-    <p>What a difference a World Championship makes!  The Angels had never drawn three million fans in a season, but they’ve eclipsed that milestone every year since winning the World Series in 2002.  I was at a game early in the ’02 season before the Angels got hot and the ballpark was mostly empty (attendance was less than 15,000), the place lacking any buzz.  Those days are long gone.</p>
-    <p>“It’s a baseball crowd now, way different than in the ‘90s, when people came because it was just something to do,” Angels pitcher Darren Oliver said in a 2007 <i>Sports Illustrated</i> article.</p>
-    <p>The Angels’ average game attendance is near the stadium’s 45,050 capacity and their enthusiastic fans are decked out in red, the team’s color.</p>
-    <p>The Angels have put a lot of emphasis on making the fan experience a pleasant one and they’ve succeeded in that mission.  Game day staff is as friendly as the fan base and, unlike Dodger Stadium, it’s easy to move about the ballpark and watch the game from different sections.</p>
-
-    <p><b>The Rally Monkey</b></p>
-    <p>Angel Stadium livens up whenever the Rally Monkey makes an appearance on the stadium's video screens, which can happen whenever the Angels are tied or trailing by three runs or less in the 7th inning or later.</p>
-    <p>"If you make noise, he will come" is spoken over the PA system and soon thereafter a monkey appears jumping around or holding a sign that says "Rally Time!!!" The pre-recorded video features Katie, the white-haired capuchin monkey that played Marcel on <i>Friends</i>.</p>
-    <p>The video clip started as a joke on June 6, 2000, but after the Angels rallied that day to beat the Giants the Rally Monkey became a part of the Anaheim experience, at least when the Angels are trailing. And no matter the outcome of the game, stuffed versions of the monkey are a popular item in the team store.</p>
-
-    <h3>Tickets</h3>
-    <p>Angels baseball is affordable. Plenty of good seats can be had for under $20  and even premium seat prices are reasonable.  There’s no point in buying the “best available” at the box office, as ushers let you roam about.  I even got into the club level, which is supposed to require a ticket, without any hassle.</p>
-    <p>The bottom line is you get good value for your dollar in Anaheim, although it’s best to buy your tickets in advance as the team regularly sells out games.</p>
-
-
-    <h1 class="headingBar"><span>Angel Stadium Footnotes - Facts &amp; Figures</span></h1>
-    <ul class="ringBullet">
-      <li>Construction cost: $24 million (1966)</li>
-      <li>Renovation cost: $118 million (1998) </li>
-      <li>Original construction began on August 31, 1964 and the first regular season game was on April 19, 1966.</li>
-      <li>Located less than three miles from Disneyland.</li>
-      <li>The Angels signed a 33 year lease in 1996, the first three years covering the renovation period.</li>
-      <li>A statue of original owner Gene Autry welcomes fans who enter through Gate 2.</li>
-      <li>From the stadium's opening until 1997, the foul lines were 333 feet away. That number was derived from a scientific study the Angels conducted to ensure field dimensions were fairly balanced between pitcher, hitter and average weather conditions.</li>
-      <li>There are six geysers in the outfield extravaganza, where a 30,000 gallon tank can shoot water 90 feet high.</li>
-      <li>Has 68 suites on the Club Level, including four Party Suites that are available on a single game basis.</li>
-      <li>The song <i>Calling All Angels</i> by Train is played before the start of every game.</li>
-      <li>Hosted the first All-Star Game to be played on prime-time television in 1967. The 1989 All-Star Game was also played here, and the 2010 game is rumored to be awarded to Anaheim.</li>
-      <li>The Angels have agreed to allow the city to build a football stadium next to the ballpark. The NFL has already purchased a lot next to Angel Stadium, although the league has no current plans for the site.</li>
-      <li>The Northridge earthquake on January 17, 1994 caused the Jumbotron to collapse onto the upper deck seats beneath it.</li>
-      <li>The last NFL game was played in the stadium on December 24, 1994.</li>
-      <li>The team has had three names since it began playing in the stadium: California Angels (1965-1996), Anaheim Angels (1997-2004), and Los Angeles Angels of Anaheim (2005-present).</li>
-      <li>The team may prefer to be called the Los Angeles Angels (abbreviated to LAA on score tickers) in the media but no mention of Los Angeles is made at the stadium or printed on tickets, which lists only the team's name without specifying any city.</li>
-      <li>A plaque placed inside the main entrance bears the stadium's two previous names. Dated March 1998, it reads: <i>Anaheim Stadium rededicated as Edison International Field of Anaheim</i></li>
-    </ul>
-    <p>- <i>Written by <a href="../gknight.html">Graham Knight</a> on July 15, 2007</p>
-
-    <img src="https://www.baseballpilgrimages.com/american/angelsballpark.jpg"  alt="Angel Stadium" style="margin:1rem 0 0;width:100%;">
-
-
-  </div>
-</div>
-
-<div class="grid-container bpFooter">
-  <div class="grid-x grid-margin-x">
-    <div class="cell medium-6 large-3">
-
-      <div class="bpFooter__headingWrapper">
-        <i class="fas fa-info-circle"></i>
-        <h4>Website Info</h2>
-      </div>
-      <ul class="menu vertical">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Game-by-Game Log</a></li>
-        <li><a href="#">Links</a></li>
-        <li><a href="#">Park by Park List (by year)</a></li>
-        <li><a href="#">Site Map</a></li>
-      </ul>
-
-
-    </div>
-    <div class="cell medium-6 large-3">
-
-      <div class="bpFooter__headingWrapper">
-        <i class="fas fa-star"></i>
-        <h4>Featured Stories</h2>
-      </div>
-      <ul class="menu vertical">
-        <li><a href="#">Top 5 Major League Ballparks</a></li>
-        <li><a href="#">Ballpark Museum in Denver</a></li>
-        <li><a href="#">Baseball Road Trips</a></li>
-        <li><a href="#">Batting Practice</a></li>
-        <li><a href="#">Rickwood Field</a></li>
-        <li><a href="#">North Carolina Road Trip</a></li>
-        <li><a href="#">College World Series</a></li>
-      </ul>
-
-    </div>
-    <div class="cell medium-6 large-3">
-
-      <div class="bpFooter__headingWrapper">
-        <i class="fas fa-shopping-cart"></i>
-        <h4>New Store Items</h2>
-
-          <div class="callout">
-            <img src="img/thumbnail-travel-map.jpg" class="float-left" style="margin: 0 1.25rem 1.25rem 0;"><p><strong>Baseball Travel Map</strong><br>The 2017 Baseball Travel Map provides essential information for the roving fan.</p>
-          </div>
-
-          <div class="callout">
-            <img src="img/thumbnail-ballpark-map.jpg" class="float-left" style="margin: 1rem 1.25rem 1.5rem 0;"><p><strong>Ballpark Map Poster</strong><br>The just updated Touring the Majors poster will be a hit with baseball fans of all ages!</p>
-          </div>
-
-      </div>
-
-    </div>
-    <div class="cell medium-6 large-3" style="min-height: 340px;">
-
-      <div class="bpFooter__headingWrapper">
-        <i class="fas fa-comments"></i>
-        <h4>Connect</h2>
-        <p style="padding:1rem;font-size:.875rem;">We want to know what you think. Share your ballpark experiences or thoughts with the readers of Baseball Pilgrimages</p>
-        <div class="text-center"><a href="#" class="button small" style="min-width:12rem;">Contact us!</a></div>
-        <a class="bpFooter__fbLink"><img src="img/facebook-icon.png">LIKE US ON FACEBOOK</a>
-      </div>
-
-    </div>
-
-  </div>
-
-  <div style="clear:both;"></div>
-</div><!--.bpFooter-->
-<div class="grid-container bpCopyrightLine">
-  <div class="grid-x grid-margin-x">
-    <div class="cell text-center">
-
-      <div class="bpCopyrightLine__text">Copyright © 2018 Baseball Enterprises, Inc. All Rights Reserved</div>
-
-    </div>
-  </div>
-</div><!--.bpWelcomeBlock-->
-
-
-
-
-
-
-
-<br><br><br><br><br><br><br><br><br><br><!--================== =========== ==============================-->
-<br><br><br><br><br><br><br><br><br> <!--================== National League ==============================-->
-
-
-<div class="bpTitleBar bpTitleBar--nationalLeague">
-  <div class="grid-x">
-    <div class="cell small-9 medium-10">
-      <h1 class="bpTitleBar__mainHeading">Great American Ball Park <small>| Cincinnati Reds</small></h1>
-    </div>
-    <div class="cell small-3 medium-2 text-center">
-      <a href="calendar.html" class="button bpTitleBar__button">Schedule</a>
-    </div>
-  </div>
-</div>
-
-<div class="grid-container bpInfoBar bpInfoBar--nationalLeague">
-  <div class="grid-x grid-padding-x">
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Opened:</strong> 2003</p>
-      <p class="bpInfoBar__dataField"><strong>Capacity:</strong> 42,271</p>
-      <p class="bpInfoBar__dataField"><strong>Home Dugout:</strong> 1st Base</p>
-    </div>
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Outfield Dimensions:</strong><br>
-        LF: 328' CF: 404' RF: 325'</p>
-      <p class="bpInfoBar__dataField"><strong>Playing Surface:</strong><br>
-        Perennial Ryegrass mixture</p>
-    </div>
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Signature feature:</strong> <a href="#thegap">The Gap</a></p>
-      <p class="bpInfoBar__dataField"><strong>Elevation:</strong> 488'</p>
-      <p class="bpInfoBar__dataField"><strong>Concessionaire:</strong> Sportservice</p>
-    </div>
-    <div class="cell small-6 large-3">
-
-      <p class="bpInfoBar__dataField"><strong>Address:</strong><br>
-      100 Joe Nuxhall Way<br>
-      Cincinnati, OH 45202<br>
-      <a href="#"><i class="fas fa-map-marker-alt margin-right"></i>View Map</a></p>
-
-    </div>
-
-
-  </div>
-</div>
-
-<div class="bpContent">
-  <div class="grid-x">
-    <div class="cell large-8">
-      <img src="img/angels.jpg">
-
-    </div>
-    <div class="cell large-4">
-
-      <a href="#" class="button large"><i class="fas fa-ticket-alt margin-right"></i> Tickets</a>
-
-      <div class="bpInfoBox bpInfoBox--nationalLeague">
-        <h3>2017 Ballpark Info</h3>
-        <p><strong>When gates open:</strong><br>
-        1.5 hours before game</p>
-
-        <p><strong>Cost to park in stadium lots:</strong><br>
-        $15</p>
-
-        <p><strong>Kids who get in free:</strong><br>
-        32" tall and shorter<br>
-        <small>(must sit on an adult's lap)</small></p>
-      </div>
-
-
-    </div>
-  </div>
-
-
-  <!-- ===================================================== Kitchen Sink ===================================================== -->
-
-  <div class="bpTitleBar">
-    <div class="grid-x grid-padding-x">
-      <div class="cell">
-        <h1 class="bpTitleBar__mainHeading">Kitchen Sink</h1>
-      </div>
-    </div>
-  </div>
-  <div class="bpInfoBar bpInfoBar--americanLeague"><p class="text-center" style="margin:0;"><strong>Typography</strong></p></div>
-  <div class="bpContent">
+<div class="bpInfoBar bpInfoBar--americanLeague"><p class="text-center" style="margin:0;"><strong>Typography</strong></p></div>
+<div class="bpLayout">
+	<div class="bpLayout__fullWidthContent">
 
     <div class="grid-x grid-padding-x">
       <div class="cell medium-6">
-        <h1 class="headingBar"><span>Heading 1</span></h1>
-        <h1>Heading 1 <small>small text</small></h1>
-        <h2 class="headingBar"><span>Heading 2</span></h2>
-        <h3>Heading 3 <small>small text</small></h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-        <p>Paragraph <small>small text</small></p>
+<h1 class="headingBar"><span>Heading 1</span></h1>
+<h1 class="headingBar headingBar--centered"><span>Heading 1</span></h1>
+<h1>Heading 1 <small>small text</small></h1>
+<h2 class="headingBar"><span>Heading 2</span></h2>
+<h2 class="headingBar headingBar--centered"><span>Heading 2</span></h2>
+<h3>Heading 3 <small>small text</small></h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<p>Paragraph <small>small text</small></p>
       </div>
       <div class="cell medium-6">
         <div class="callout">
-<pre>
+<pre style="line-height: 3;">
 &lt;h1 class=&quot;headingBar&quot;&gt;&lt;span&gt;Heading 1&lt;/span&gt;&lt;/h1&gt;
-
+&lt;h1 class=&quot;headingBar headingBar--centered&quot;&gt;&lt;span&gt;Heading 1&lt;/span&gt;&lt;/h1&gt;
 &lt;h1&gt;Heading 1 &lt;small&gt;small text&lt;/small&gt;&lt;/h1&gt;
-
 &lt;h2 class=&quot;headingBar&quot;&gt;&lt;span&gt;Heading 2&lt;/span&gt;&lt;/h2&gt;
-
+&lt;h2 class=&quot;headingBar headingBar--centered&quot;&gt;&lt;span&gt;Heading 2&lt;/span&gt;&lt;/h2&gt;
 &lt;h3&gt;Heading 3 &lt;small&gt;small text&lt;/small&gt;&lt;/h3&gt;
-
 &lt;h4&gt;Heading 4&lt;/h4&gt;
-
 &lt;h5&gt;Heading 5&lt;/h5&gt;
-
 &lt;h6&gt;Heading 6&lt;/h6&gt;
-
 &lt;p&gt;Paragraph &lt;small&gt;small text&lt;/small&gt;&lt;/p&gt;
 </pre>
         </div>
       </div>
     </div>
 
-  <hr>
-
-
-    <div class="grid-x grid-padding-x">
-        <div class="cell large-5">
-
-          <a href="#" class="button large">Large</a>
-          <a href="#" class="button">Normal</a>
-          <a href="#" class="button small">Small</a>
-          <a href="#" class="button tiny">Tiny</a>
-
-          <a href="#" class="button large expanded">Large Expanded</a>
-
-          <code>.expanded</code> fills available width (any size button)
-
-
-        </div>
-        <div class="cell large-6">
-
-          <div class="callout">
-  <pre>
-  &lt;a href=&quot;#&quot; class=&quot;button large&quot;&gt;Large&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Normal&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;button small&quot;&gt;Small&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;button tiny&quot;&gt;Tiny&lt;/a&gt;
-
-  &lt;a href=&quot;#&quot; class=&quot;button large expanded&quot;&gt;Large Expanded&lt;/a&gt;
-  </pre>
-          </div>
-
-
-        </div>
-      </div>
-
-        <hr>
+    <hr>
 
     <div class="grid-x grid-padding-x">
-        <div class="cell large-6">
+      <div class="cell medium-6">
 
-          <div class="bpPanel">
-            <h4 class="bpPanel__heading">Panel</h4>
-            <div class="bpPanel__content">
+<p class="text-right">This text is right-aligned</p>
+<p class="text-center">This text is center-aligned</p>
+<p class="text-justify">This text is justified. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in hendrerit libero. Mauris odio turpis, faucibus a urna et, eleifend sollicitudin eros. Proin quis dictum metus. Proin in elementum tellus. Aenean lacinia purus lectus, quis luctus massa laoreet non. Aliquam et viverra arcu. Aliquam cursus risus nec erat pulvinar ornare sit amet eget leo.</p>
 
-            <p>Content goes here.</p>
-
-            <ul>
-              <li>Unordered list</li>
-              <li>Unordered list</li>
-            </ul>
-
-          </div>
-          </div>
-
-        </div>
-        <div class="cell large-6">
-
-          <div class="callout">
-  <pre>
-  &lt;div class=&quot;bpPanel&quot;&gt;
-  &lt;h4 class=&quot;bpPanel__heading&quot;&gt;Panel&lt;/h4&gt;
-  &lt;div class=&quot;bpPanel__content&quot;&gt;
-
-  &lt;p&gt;Content goes here.&lt;/p&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;Unordered list&lt;/li&gt;
-    &lt;li&gt;Unordered list&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;/div&gt;
-  &lt;/div&gt;
-  </pre>
-          </div>
-
-
+      </div>
+      <div class="cell medium-6">
+        <div class="callout">
+<pre style="line-height: 3;">
+  &lt;p class=&quot;text-right&quot;&gt;This text is right-aligned&lt;/p&gt;
+  &lt;p class=&quot;text-center&quot;&gt;This text is center-aligned&lt;/p&gt;
+  &lt;p class=&quot;text-justify&quot;&gt;This text is justified...&lt;/p&gt;
+</pre>
         </div>
       </div>
-
-        <hr>
-
-          <div class="grid-x grid-padding-x">
-              <div class="cell large-6">
-
-                <div class="bpInfoBox">
-
-                  <h3>Heading</h3>
-
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                  <strong>Strong text</strong><br>
-                  <small>Small text</small></p>
-
-                </div>
-
-                <div class="bpInfoBox bpInfoBox--border">
-
-                  <h3>Heading</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-                </div>
-
-                <div class="bpInfoBox bpInfoBox--red">
-
-                  <h3>Heading</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-                </div>
-
-                <code>.bpInfoBox--border</code> and<br><code>.bpInfoBox--red</code> are modifiers for bpInfoBox block
-
-              </div>
-              <div class="cell large-6">
-
-                <div class="callout">
-  <pre>
-    &lt;div class=&quot;bpInfoBox&quot;&gt;
-
-      &lt;h3&gt;Heading&lt;/h3&gt;
-
-      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br&gt;
-      &lt;strong&gt;Strong text&lt;/strong&gt;&lt;br&gt;
-      &lt;small&gt;Small text&lt;/small&gt;&lt;/p&gt;
-
-    &lt;/div&gt;
-  </pre>
-  <hr>
-  <pre>
-  &lt;div class=&quot;bpInfoBox bpInfoBox--border&quot;&gt;
-
-    &lt;h3&gt;Heading&lt;/h3&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-
-  &lt;/div&gt;
-  </pre>
-  <hr>
-  <pre>
-  &lt;div class=&quot;bpInfoBox bpInfoBox--red&quot;&gt;
-
-    &lt;h3&gt;Heading&lt;/h3&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
-
-  &lt;/div&gt;
-  </pre>
-                </div>
-
-
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-  </div>
-
-  -->
-
-
-
-<br>
-
-</div><!--.bpContent-->
-
-<br><br><br><br><br><br><br><br><br> <!--================== Cactus League ==============================-->
-<div class="cactusLeague">
-
-
-<div class="bpTitleBar bpTitleBar--cactusLeague">
-  <div class="grid-x">
-    <div class="cell small-9 medium-10">
-      <h1 class="bpTitleBar__mainHeading">Peoria Sports Complex<br><small>| Mariners and Padres Spring Training</small></h1>
     </div>
-    <div class="cell small-3 medium-2 text-center">
-      <a href="calendar.html" class="button bpTitleBar__button">Schedule</a>
-    </div>
-  </div>
-</div>
 
-<div class="grid-container bpInfoBar bpInfoBar--cactusLeague">
-  <div class="grid-x grid-padding-x">
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Opened:</strong> 1966</p>
-    </div>
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Capacity:</strong> 45,050</p>
-    </div>
-    <div class="cell small-6 large-3 large-4">
-      <p class="bpInfoBar__dataField"><strong>Elevation:</strong> 149'</p>
-    </div>
-    <div class="cell small-6 medium-2 text-center">
-      <a href="#" class="button bpInfoBar__button bpInfoBar__button--narrow">Tickets</a>
-    </div>
+    <p><small>Any text element (aside from h1/h2s with heading bar enabled) can be aligned with these classes</small></p>
 
   </div>
 </div>
 
-<div class="bpContent">
-  <div class="grid-x">
-    <div class="cell large-8">
-      <img src="img/angels.jpg">
 
 
-            <h2>Ed Smith Stadium Facts, Figures & Firsts</h2>
-            <ul class="ringBullet">
-              <li>Construction cost: $8.5 million
-              <li>Architect: HOK Sport
-              <li>Construction manager: Barton Malow Company
-              <li>Owned by Sarasota County, which purchased the stadium from the City of Sarasota for just $1 on November 10, 2009.
-              <li>The stadium is the centerpiece of the 53-acre City of Sarasota Sports Complex.
-              <li>Since its opening the stadium has been named after Ed Smith, the longtime former President (1966-1993) of the Sarasota Sports Committee who passed away on March 9, 2006 at the age of 91. Smith was the driving force behind getting the stadium built, which was accomplished by the passage of a general obligation bond on November 4, 1986 by voters in the city of Sarasota.
-              <li>Spring training tenants: Chicago White Sox (1989-1997), Cincinnati Reds (1998-2009) and Baltimore Orioles (1991 and starting again in 2010)
-              <li>Minor league tenants: Sarasota White Sox (1989-1993), Sarasota Red Sox (1994-2004) and Sarasota Reds (2005-2009)
-              <li>First game: The Chicago White Sox beat the Boston Red Sox 3-2 on March 2, 1989 in front of 6,892 fans.
-            </ul>
+<div class="bpInfoBar bpInfoBar--americanLeague"><p class="text-center" style="margin:0;"><strong>Containers</strong></p></div>
+<div class="bpLayout">
+	<div class="bpLayout__fullWidthContent">
 
-            <h3>Other stadium firsts:</h3>
-
-            <table>
-              <thead>
-                <tr>
-                  <td>Pitch</td>
-                  <td>Batter</td>
-                  <td>Hit</td>
-                  <td>Home Run</td>
-                  <td>Winning</td>
-                  <td>Pitcher</td>
-                  <td>Losing Pitcher</td>
-                  <td>Save</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Jerry Reuss</td>
-                  <td>Wade Boggs</td>
-                  <td>Carlos Quintana</td>
-                  <td>Dan Pasqua</td>
-                  <td>Tom McCarthy</td>
-                  <td>Mike Rochford</td>
-                  <td>Bobby Thigpen</td>
-                </tr>
-              </tbody>
-            </table>
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-5">
 
 
+<div class="bpInfoBox">
+  <h3>Default InfoBox</h3>
+  <p>Lorem ipsum dolor sit amet <a href="#">Read More</a></p>
+</div>
+
+<div class="bpInfoBox bpInfoBox--red">
+  <h3>Red InfoBox</h3>
+  <p>Lorem ipsum dolor sit amet <a href="#">Read More</a></p>
+</div>
+
+<div class="bpInfoBox bpInfoBox--blue">
+  <h3>Blue InfoBox</h3>
+  <p>Lorem ipsum dolor sit amet <a href="#">Read More</a></p>
+</div>
+
+<div class="bpInfoBox bpInfoBox--yellow">
+  <h3>Yellow InfoBox</h3>
+  <p>Lorem ipsum dolor sit amet <a href="#">Read More</a></p>
+</div>
+
+<div class="bpInfoBox bpInfoBox--green">
+  <h3>Green InfoBox</h3>
+  <p>Lorem ipsum dolor sit amet <a href="#">Read More</a></p>
+</div>
+
+<div class="bpInfoBox bpInfoBox--black">
+  <h3>Black InfoBox</h3>
+  <p>Lorem ipsum dolor sit amet <a href="#">Read More</a></p>
+</div>
+
+<div class="bpInfoBox bpInfoBox--small">
+  <h3>Small InfoBox</h3>
+  <p>This class reduces the text size of the content. It can be used in conjunction with any of the color classes.</p>
+</div>
 
 
-    </div>
-    <div class="cell large-4">
-
-
-      <h3 class="margin-top">Ballpark Links</h3>
-      <ul class="ringBullet">
-        <li><a href="#">Seating Diagram</a></li>
-        <li><a href="#">Directions</a></li>
-        <li>For a complete ballpark guide, visit the <a href="#">Ed Smith Stadium page at Spring Training Connection</a></li>
-      </ul>
-
-
-      <div class="bpInfoBox bpInfoBox--cactusLeague">
-        <h3>2017 Ballpark Info</h3>
-        <p><strong>When gates open:</strong><br>
-        1.5 hours before game</p>
-
-        <p><strong>Cost to park in stadium lots:</strong><br>
-        $15</p>
-
-        <p><strong>Kids who get in free:</strong><br>
-        32" tall and shorter<br>
-        <small>(must sit on an adult's lap)</small></p>
       </div>
+      <div class="cell medium-7">
+        <div class="callout">
+<pre>
+&#x3C;div class=&#x22;bpInfoBox&#x22;&#x3E;
+  &#x3C;h3&#x3E;Default InfoBox&#x3C;/h3&#x3E;
+  &#x3C;p&#x3E;Lorem ipsum dolor sit amet &#x3C;a href=&#x22;#&#x22;&#x3E;Read More&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
 
+&#x3C;div class=&#x22;bpInfoBox bpInfoBox--red&#x22;&#x3E;
+  &#x3C;h3&#x3E;Red InfoBox&#x3C;/h3&#x3E;
+  &#x3C;p&#x3E;Lorem ipsum dolor sit amet &#x3C;a href=&#x22;#&#x22;&#x3E;Read More&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
 
-      <div class="bpPanel">
-        <h4 class="bpPanel__heading"><i class="fas fa-flag" aria-hidden=""></i> Panel</h4>
-        <div class="bpPanel__content">
-          <ul class="ringBullet" style="margin-bottom:0;margin-left: 1.5rem;">
-            <li><a href="http://www.stadiumsofprofootball.com/past/AnaheimStadium.htm" target="_blank">Anaheim Stadium - LA Rams</a></li>
-            <li><a href="http://www.ballparkreviews.com/anaheim/anaheim.htm" target="_blank">Ballpark Reviews</a></li>
-            <li><a href="http://www.ballparksofbaseball.com/al/AngelStadium.htm" target="_blank">Ballparks of Baseball</a></li>
-            <li><a href="http://thecaliforniateam.blogspot.com/2006/11/history.html" target="_blank">Construction Pictures</a></li>
-            <li><a href="http://www.fundinguniverse.com/company-histories/anaheim-angels-baseball-club-inc-history/" target="_blank">History of the Angels Franchise</a></li>
-          </ul>
+&#x3C;div class=&#x22;bpInfoBox bpInfoBox--blue&#x22;&#x3E;
+  &#x3C;h3&#x3E;Blue InfoBox&#x3C;/h3&#x3E;
+  &#x3C;p&#x3E;Lorem ipsum dolor sit amet &#x3C;a href=&#x22;#&#x22;&#x3E;Read More&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;bpInfoBox bpInfoBox--yellow&#x22;&#x3E;
+  &#x3C;h3&#x3E;Yellow InfoBox&#x3C;/h3&#x3E;
+  &#x3C;p&#x3E;Lorem ipsum dolor sit amet &#x3C;a href=&#x22;#&#x22;&#x3E;Read More&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;bpInfoBox bpInfoBox--green&#x22;&#x3E;
+  &#x3C;h3&#x3E;Green InfoBox&#x3C;/h3&#x3E;
+  &#x3C;p&#x3E;Lorem ipsum dolor sit amet &#x3C;a href=&#x22;#&#x22;&#x3E;Read More&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;bpInfoBox bpInfoBox--black&#x22;&#x3E;
+  &#x3C;h3&#x3E;Black InfoBox&#x3C;/h3&#x3E;
+  &#x3C;p&#x3E;Lorem ipsum dolor sit amet &#x3C;a href=&#x22;#&#x22;&#x3E;Read More&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+
+&#x3C;div class=&#x22;bpInfoBox bpInfoBox--small&#x22;&#x3E;
+  &#x3C;h3&#x3E;Small InfoBox&#x3C;/h3&#x3E;
+  &#x3C;p&#x3E;This class reduces the text size of the content. It can be used in conjunction with any of the color classes.&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+</pre>
         </div>
       </div>
-
-      <a href="#" class="button">More info >></a>
-
     </div>
+
+    <hr>
+
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-5">
+<div class="callout" style="padding: 1rem;">
+  <p>This is a basic callout.</p>
+</div>
+
+<div class="callout primary" style="padding: 1rem;">
+  <p>This is a primary color callout.</p>
+</div>
+
+<div class="callout secondary" style="padding: 1rem;">
+  <p>This is a secondary color callout.</p>
+</div>
+
+<div class="callout success" style="padding: 1rem;">
+  <p>This is a success callout.</p>
+</div>
+
+<div class="callout warning" style="padding: 1rem;">
+  <p>This is a warning callout.</p>
+</div>
+
+      </div>
+      <div class="cell medium-7">
+        <div class="callout">
+<pre>
+  &lt;div class=&quot;callout&quot;&gt;
+    &lt;p&gt;This is a basic callout.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;callout primary&quot;&gt;
+    &lt;p&gt;This is a primary color callout.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;callout secondary&quot;&gt;
+    &lt;p&gt;This is a secondary color callout.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;callout success&quot;&gt;
+    &lt;p&gt;This is a success callout.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;callout warning&quot;&gt;
+    &lt;p&gt;This is a warning callout.&lt;/p&gt;
+  &lt;/div&gt;
+</pre>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-5">
+<div class="bpPanel">
+  <h4 class="bpPanel__heading">Panel Heading</h4>
+  <div class="bpPanel__content">
+
+  <p>Content goes here. Color depends on color scheme of page.</p>
+
   </div>
+</div>
+      </div>
+      <div class="cell medium-7">
+        <div class="callout">
+<pre>
+&#x3C;div class=&#x22;bpPanel&#x22;&#x3E;
+  &#x3C;h4 class=&#x22;bpPanel__heading&#x22;&#x3E;Panel Heading&#x3C;/h4&#x3E;
+  &#x3C;div class=&#x22;bpPanel__content&#x22;&#x3E;
 
-<br>
+  &#x3C;p&#x3E;Content goes here. Color depends on color scheme of page.&#x3C;/p&#x3E;
 
-</div><!--.bpContent-->
+  &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+</pre>
+        </div>
+      </div>
+    </div>
 
+  </div>
+</div>
+
+
+<div class="bpInfoBar bpInfoBar--americanLeague"><p class="text-center" style="margin:0;"><strong>Block Quote</strong></p></div>
+<div class="bpLayout">
+	<div class="bpLayout__fullWidthContent">
+
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-5">
+<blockquote>
+  Those people who think they know everything are a great annoyance to those of us who do.
+  <cite>Isaac Asimov</cite>
+</blockquote>
+      </div>
+      <div class="cell medium-7">
+        <div class="callout">
+<pre>
+&lt;blockquote&gt;
+  Those people who think they know everything are a great annoyance to those of us who do.
+  &lt;cite&gt;Isaac Asimov&lt;/cite&gt;
+&lt;/blockquote&gt;
+</pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="bpInfoBar bpInfoBar--americanLeague"><p class="text-center" style="margin:0;"><strong>Tooltips/Abbreviations</strong></p></div>
+<div class="bpLayout">
+  <div class="bpLayout__fullWidthContent">
+
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-5">
+<p>The <span data-tooltip title="Fancy word for a beetle.">scarabaeus</span> hung quite
+clear of any branches, and, if allowed to fall, would have fallen at our feet.</p>
+
+<p>In my dream, I saw <abbr title="John Ronald Reuel">J. R. R.</abbr> Tolkien and George <abbr title="Raymond Richard">R. R.</abbr> Martin hanging out on Sunset Blvd.</p>
+      </div>
+      <div class="cell medium-7">
+        <div class="callout">
+<pre>
+&lt;p&gt;The &lt;span data-tooltip title=&quot;Fancy word for a beetle.&quot;&gt;scarabaeus&lt;/span&gt; hung quite
+clear of any branches, and, if allowed to fall, would have fallen at our feet.&lt;/p&gt;
+
+&lt;p&gt;In my dream, I saw &lt;abbr title=&quot;John Ronald Reuel&quot;&gt;J. R. R.&lt;/abbr&gt; Tolkien<br>and George &lt;abbr title=&quot;Raymond Richard&quot;&gt;R. R.&lt;/abbr&gt; Martin hanging out on Sunset Blvd.&lt;/p&gt;
+</pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="bpInfoBar bpInfoBar--americanLeague"><p class="text-center" style="margin:0;"><strong>Icons</strong></p></div>
+<div class="bpLayout">
+  <div class="bpLayout__fullWidthContent">
+
+    <p>Your theme uses Font Awesome icons. These icons are essentially a font and can be styled positioned accordingly. There are many icons including various arrows and shapes. <a href="https://fontawesome.com/icons?d=gallery" target="_blank">Click here</a> for a searchable list of the available icons. You can copy the icon code directly from this site on the icon page.</p>
+
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-5">
+
+<p style="font-size:3rem;color:#b30a0a"><i class="fas fa-baseball-ball"></i></p>
+
+<p><a href="#"><i class="fas fa-arrow-circle-left margin-right"></i>Back</a></p>
+
+<a href="#" class="button"><i class="fas fa-ticket-alt margin-right"></i> Tickets</a>
+
+<p><small>The classes margin-left and margin-right can be added to give some spacing around the icon.</small></p>
+
+      </div>
+      <div class="cell medium-7">
+        <div class="callout">
+<pre>
+&#x3C;p style=&#x22;font-size:3rem;color:#b30a0a&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-baseball-ball&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/p&#x3E;
+
+&#x3C;p&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-arrow-circle-left margin-right&#x22;&#x3E;&#x3C;/i&#x3E;Back&#x3C;/a&#x3E;&#x3C;/p&#x3E;
+
+&#x3C;a href=&#x22;#&#x22; class=&#x22;button&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-ticket-alt margin-right&#x22;&#x3E;&#x3C;/i&#x3E; Tickets&#x3C;/a&#x3E;
+</pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="bpInfoBar bpInfoBar--americanLeague"><p class="text-center" style="margin:0;"><strong>DataTables</strong></p></div>
+<div class="bpLayout">
+  <div class="bpLayout__fullWidthContent">
+
+    <p>To add the basic Data Tables sorting functionality just add the dataTable class to your table. The table html syntax must be correct for the plugin to work properly.</p>
+
+    <p>To add the right side shadow to indicate additional content on smaller screens, wrap the table in a div with the class scrolling-table. Can be used with or without the DataTables plugin.</p>
+
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-6">
+
+<div class="scrolling-table">
+<table class="dataTable">
+  <thead>
+    <tr>
+      <th width="200">Fixed Width Header</th>
+      <th>Table Header</th>
+      <th>Table Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nunc vehicula ac</td>
+      <td>Donec id elit non mi porta gravida at eget metus.</td>
+      <td>2000</td>
+    </tr>
+    <tr>
+      <td>Lorem ipsum dolor</td>
+      <td>Donec id elit non mi porta gravida at eget metus.</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>Ut placerat condimentum</td>
+      <td>Donec id elit non mi porta gravida at eget metus.</td>
+      <td>3000</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
 <br><br>
-<br><br><br><br><br><br><br><br><br> <!--================== Grapefruit League ==============================-->
 
-<br>
+<small>To remove the alternating color stripes, add the unstriped class to the table element</small>
+
+      </div>
+      <div class="cell medium-6">
+        <div class="callout">
+<pre>
+&#x3C;div class=&#x22;scrolling-table&#x22;&#x3E;
+&#x3C;table class=&#x22;dataTable&#x22;&#x3E;
+  &#x3C;thead&#x3E;
+    &#x3C;tr&#x3E;
+      &#x3C;th width=&#x22;200&#x22;&#x3E;Fixed Width Header&#x3C;/th&#x3E;
+      &#x3C;th&#x3E;Table Header&#x3C;/th&#x3E;
+      &#x3C;th&#x3E;Table Header&#x3C;/th&#x3E;
+    &#x3C;/tr&#x3E;
+  &#x3C;/thead&#x3E;
+  &#x3C;tbody&#x3E;
+    &#x3C;tr&#x3E;
+      &#x3C;td&#x3E;Nunc vehicula ac&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;Donec id elit non mi porta gravida at eget metus.&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;2000&#x3C;/td&#x3E;
+    &#x3C;/tr&#x3E;
+    &#x3C;tr&#x3E;
+      &#x3C;td&#x3E;Lorem ipsum dolor&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;Donec id elit non mi porta gravida at eget metus.&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;1000&#x3C;/td&#x3E;
+    &#x3C;/tr&#x3E;
+    &#x3C;tr&#x3E;
+      &#x3C;td&#x3E;Ut placerat condimentum&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;Donec id elit non mi porta gravida at eget metus.&#x3C;/td&#x3E;
+      &#x3C;td&#x3E;3000&#x3C;/td&#x3E;
+    &#x3C;/tr&#x3E;
+  &#x3C;/tbody&#x3E;
+&#x3C;/table&#x3E;
+&#x3C;/div&#x3E;
+</pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
-<div class="grapefruitLeague">
+<div class="bpInfoBar bpInfoBar--americanLeague"><p class="text-center" style="margin:0;"><strong>Visibility Classes</strong></p></div>
+<div class="bpLayout">
+	<div class="bpLayout__fullWidthContent">
 
-<div class="bpTitleBar bpTitleBar--grapefruitLeague">
+    <p>The classes below can be used to hide/show content based on the width of the user's browser. They can be applied to any element.</p>
+    <p>There are 3 defined sizes: small (0 - 640px), medium (640px - 1024px), large (1024px - 1200px), and xlarge (1200px and up). This is a <span class="show-for-small-only" style="color:red;">SMALL</span> <span class="show-for-medium-only" style="color:red;">MEDIUM</span> <span class="show-for-large-only" style="color:red;">LARGE</span> <span class="show-for-xlarge-only" style="color:red;">XLARGE</span> screen.</p>
+    <br>
+
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-6">
+
+<h4>Show by Screen Size</h4>
+
+<p>You are on a small screen or larger.</p>
+<p class="show-for-medium">You are on a medium screen or larger.</p>
+<p class="show-for-large">You are on a large screen or larger.</p>
+
+<p class="show-for-small-only">You are <em>definitely</em> on a small screen.</p>
+<p class="show-for-medium-only">You are <em>definitely</em> on a medium screen.</p>
+<p class="show-for-large-only">You are <em>definitely</em> on a large screen.</p>
+<p class="show-for-xlarge-only">You are <em>definitely</em> on a xlarge screen.</p>
+
+<hr>
+
+<h4>Hide by Screen Size</h4>
+
+<p class="hide-for-medium">You are <em>not</em> on a medium screen or larger.</p>
+<p class="hide-for-large">You are <em>not</em> on a large screen or larger.</p>
+
+<p class="hide-for-small-only">You are <em>definitely not</em> on a small screen.</p>
+<p class="hide-for-medium-only">You are <em>definitely not</em> on a medium screen.</p>
+<p class="hide-for-large-only">You are <em>definitely not</em> on a large screen.</p>
+<p class="hide-for-xlarge-only">You are <em>definitely not</em> on a xlarge screen.</p>
+
+
+      </div>
+      <div class="cell medium-6">
+        <div class="callout">
+<pre>
+&#x3C;h4&#x3E;Show by Screen Size&#x3C;/h4&#x3E;
+
+&#x3C;p&#x3E;You are on a small screen or larger.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;show-for-medium&#x22;&#x3E;You are on a medium screen or larger.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;show-for-large&#x22;&#x3E;You are on a large screen or larger.&#x3C;/p&#x3E;
+
+&#x3C;p class=&#x22;show-for-small-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely&#x3C;/em&#x3E; on a small screen.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;show-for-medium-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely&#x3C;/em&#x3E; on a medium screen.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;show-for-large-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely&#x3C;/em&#x3E; on a large screen.&#x3C;/p&#x3E;
+
+&#x3C;hr&#x3E;
+
+&#x3C;h4&#x3E;Hide by Screen Size&#x3C;/h4&#x3E;
+
+&#x3C;p class=&#x22;hide-for-medium&#x22;&#x3E;You are &#x3C;em&#x3E;not&#x3C;/em&#x3E; on a medium screen or larger.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;hide-for-large&#x22;&#x3E;You are &#x3C;em&#x3E;not&#x3C;/em&#x3E; on a large screen or larger.&#x3C;/p&#x3E;
+
+&#x3C;p class=&#x22;hide-for-small-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely not&#x3C;/em&#x3E; on a small screen.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;hide-for-medium-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely not&#x3C;/em&#x3E; on a medium screen.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;hide-for-large-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely not&#x3C;/em&#x3E; on a large screen.&#x3C;/p&#x3E;
+</pre>
+        </div>
+      </div>
+    </div>
+
+    <p><small>There's no .hide-for-small class, because that would just permanently hide the element.</small></p>
+
+  </div>
+</div>
+
+
+
+<div class="grid-container bpCopyrightLine" role="contentinfo">
   <div class="grid-x">
-    <div class="cell small-9 medium-10">
-      <h1 class="bpTitleBar__mainHeading">Ed Smith Stadium <small>| Orioles Spring Training</small></h1>
-    </div>
-    <div class="cell small-3 medium-2 text-center">
-      <a href="calendar.html" class="button bpTitleBar__button">Schedule</a>
-    </div>
-  </div>
-</div>
-
-<div class="grid-container bpInfoBar bpInfoBar--grapefruitLeague">
-  <div class="grid-x grid-padding-x">
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Opened:</strong> 1989</p>
-
-      <p><strong>Outfield Dimensions</strong><br>
-        LF: 333' CF: 400' RF: 339'</p>
-    </div>
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Capacity:</strong> 8,500</p>
-      <p><strong>Phone:</strong> 423-638-0411</p>
-    </div>
-    <div class="cell small-6 medium-4">
-      <p class="bpInfoBar__dataField"><strong>Ballpark address:</strong><br>
-        2700 12th Street<br>
-        Sarasota, FL 34237</p>
-    </div>
-    <div class="cell small-6 medium-2 text-center">
-      <a href="#" class="button bpInfoBar__button">Tickets</a>
-    </div>
-  </div>
-</div>
-
-<div class="bpContent">
-  <div class="grid-x">
-    <div class="cell large-8">
-      <img src="https://www.baseballpilgrimages.com/spring/clearwater.jpg" class="text-center">
-
-
-
-<h2>Spring Training Schedule</h2>
-
- <table>
-   <thead>
-     <tr>
-       <td>February</td>
-       <td>Day</td>
-       <td>Time</td>
-       <td>Visiting Team</td>
-       <td>TicketNetwork</td>
-     </tr>
- </thead>
- <tbody>
-
-<tr>
- <td>23</td>
- <td>Saturday</td>
- <td>TBA</td>
- <td>Twins</td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td>24</td>
- <td>Sunday</td>
- <td>TBA</td>
- <td>Blue Jays</td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td>26</td>
- <td>Tuesday</td>
- <td>TBA</td>
- <td>Rays</td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-  <thead>
-    <tr>
-      <td>March</td>
-      <td>Day</td>
-      <td>Time</td>
-      <td>Visiting Team</td>
-      <td>TicketNetwork</td>
-    </tr>
-</thead>
-<tbody>
-<tr>
- <td> 1</td>
- <td>Friday</td>
- <td>TBA</td>
- <td>Rays</td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td> 3</td>
- <td>Sunday</td>
- <td>TBA</td>
- <td>Tigers</td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td> 5</td>
- <td>Tuesday</td>
- <td>TBA</td>
- <td>Pirates</td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td> 8</td>
- <td>Friday</td>
- <td>TBA</td>
- <td><b>Red Sox</b></td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td> 9</td>
- <td>Saturday</td>
- <td>TBA</td>
- <td><b>Yankees</b></td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td>10</td>
- <td>Sunday</td>
- <td>TBA</td>
- <td>Phillies</td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td>13</td>
- <td>Wednesday</td>
- <td>TBA</td>
- <td>Blue Jays</td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td>14</td>
- <td>Thursday</td>
- <td>TBA</td>
- <td>Twins</td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td>17</td>
- <td>Sunday</td>
- <td>TBA</td>
- <td><b>Yankees</b></td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td>19</td>
- <td>Tuesday</td>
- <td>TBA</td>
- <td>Twins</td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td>20</td>
- <td>Wednesday</td>
- <td>TBA</td>
- <td><b>Red Sox</b></td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td>23</td>
- <td>Saturday</td>
- <td>TBA</td>
- <td>Twins</td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td>24</td>
- <td>Sunday</td>
- <td>TBA</td>
- <td>Pirates</td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-
-<tr>
- <td>25</td>
- <td>Monday</td>
- <td>TBA</td>
- <td>Mets</td>
- <td><a href="http://www.anrdoezrs.net/links/2114576/type/dlg/https://www.ticketnetwork.com/en/tickets/ed-smith-stadium/sarasota-FL/v/1394" rel="nofollow">Tickets</a></td>
-</tr>
-</tbody>
-</table>
-
-
-
-      <h2>Ed Smith Stadium Facts, Figures & Firsts</h2>
-      <ul class="ringBullet">
-        <li>Construction cost: $8.5 million
-        <li>Architect: HOK Sport
-        <li>Construction manager: Barton Malow Company
-        <li>Owned by Sarasota County, which purchased the stadium from the City of Sarasota for just $1 on November 10, 2009.
-        <li>The stadium is the centerpiece of the 53-acre City of Sarasota Sports Complex.
-        <li>Since its opening the stadium has been named after Ed Smith, the longtime former President (1966-1993) of the Sarasota Sports Committee who passed away on March 9, 2006 at the age of 91. Smith was the driving force behind getting the stadium built, which was accomplished by the passage of a general obligation bond on November 4, 1986 by voters in the city of Sarasota.
-        <li>Spring training tenants: Chicago White Sox (1989-1997), Cincinnati Reds (1998-2009) and Baltimore Orioles (1991 and starting again in 2010)
-        <li>Minor league tenants: Sarasota White Sox (1989-1993), Sarasota Red Sox (1994-2004) and Sarasota Reds (2005-2009)
-        <li>First game: The Chicago White Sox beat the Boston Red Sox 3-2 on March 2, 1989 in front of 6,892 fans.
-      </ul>
-
-      <h3>Other stadium firsts:</h3>
-
-      <table>
-        <thead>
-          <tr>
-            <td>Pitch</td>
-            <td>Batter</td>
-            <td>Hit</td>
-            <td>Home Run</td>
-            <td>Winning</td>
-            <td>Pitcher</td>
-            <td>Losing Pitcher</td>
-            <td>Save</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Jerry Reuss</td>
-            <td>Wade Boggs</td>
-            <td>Carlos Quintana</td>
-            <td>Dan Pasqua</td>
-            <td>Tom McCarthy</td>
-            <td>Mike Rochford</td>
-            <td>Bobby Thigpen</td>
-          </tr>
-        </tbody>
-      </table>
-
-
-
-
-    </div>
-    <div class="cell large-4">
-
-      <h3 class="margin-top">Ballpark Links</h3>
-      <ul class="ringBullet">
-        <li><a href="#">Seating Diagram</a></li>
-        <li><a href="#">Directions</a></li>
-        <li>For a complete ballpark guide, visit the <a href="#">Ed Smith Stadium page at Spring Training Connection</a></li>
-      </ul>
-
-      <div class="bpInfoBox bpInfoBox--grapefruitLeague">
-        <h3>2017 Ballpark Info</h3>
-        <p><strong>When gates open:</strong><br>
-        1.5 hours before game</p>
-
-        <p><strong>Cost to park in stadium lots:</strong><br>
-        $15</p>
-
-        <p><strong>Kids who get in free:</strong><br>
-        32" tall and shorter<br>
-        <small>(must sit on an adult's lap)</small></p>
-      </div>
-
-      <div class="bpInfoBox bpInfoBox--grapefruitLeague">
-        <p><strong>Buy or Sell<br>
-        <a href="#">Spring Training Tickets</a></strong><br>
-        <small>Great selection at <a href="#">TicketNetwork</a></small></p>
-      </div>
-
-
-      <div class="bpInfoBox text-center">
-        <h3><a href="#">Orioles Store</a></h3>
-        <a href="#"><img src="https://www.baseballpilgrimages.com/wristband/baltimore.jpg"></a>
-        <p>The place to shop for Orioles fans or the Baltimore fan in your life.</p>
-      </div>
-
-      <a href="#" class="button">Click here</a>
-
-    </div>
-  </div>
-
-</div><!--.bpContent-->
-
-
-</div>
-
-  <br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br>
-
-
-<!-- ===================================================== BLACK ===================================================== -->
-<br> <!-- ===================================================== BLACK ===================================================== -->
-<!-- ===================================================== BLACK ===================================================== -->
-
-
-<div class="bpTitleBar bpTitleBar--black">
-  <div class="grid-x">
-    <div class="cell small-9 medium-10">
-      <h1 class="bpTitleBar__mainHeading">Angel Stadium <small>| Los Angeles Angels</small></h1>
-    </div>
-    <div class="cell small-3 medium-2 text-center">
-      <a href="calendar.html" class="button bpTitleBar__button">Schedule</a>
-    </div>
-  </div>
-</div>
-
-
-<div class="grid-container bpInfoBar">
-  <div class="grid-x grid-padding-x">
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Opened:</strong> 1966</p>
-    </div>
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Capacity:</strong> 45,050</p>
-    </div>
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Elevation:</strong> 149'</p>
-    </div>
-    <div class="cell small-6 large-3">
-      <p class="bpInfoBar__dataField"><strong>Signature feature:</strong> <a href="#biga">The Big A</a></p>
-    </div>
-
-
-
-  </div>
-</div>
-
-<div class="bpContent">
-  <div class="grid-x">
-    <div class="cell large-8">
-      <img src="img/angels.jpg">
-
-
-      <h2>Ed Smith Stadium Facts, Figures & Firsts</h2>
-      <ul class="ringBullet">
-        <li>Construction cost: $8.5 million
-        <li>Architect: HOK Sport
-        <li>Construction manager: Barton Malow Company
-        <li>Owned by Sarasota County, which purchased the stadium from the City of Sarasota for just $1 on November 10, 2009.
-        <li>The stadium is the centerpiece of the 53-acre City of Sarasota Sports Complex.
-        <li>Since its opening the stadium has been named after Ed Smith, the longtime former President (1966-1993) of the Sarasota Sports Committee who passed away on March 9, 2006 at the age of 91. Smith was the driving force behind getting the stadium built, which was accomplished by the passage of a general obligation bond on November 4, 1986 by voters in the city of Sarasota.
-        <li>Spring training tenants: Chicago White Sox (1989-1997), Cincinnati Reds (1998-2009) and Baltimore Orioles (1991 and starting again in 2010)
-        <li>Minor league tenants: Sarasota White Sox (1989-1993), Sarasota Red Sox (1994-2004) and Sarasota Reds (2005-2009)
-        <li>First game: The Chicago White Sox beat the Boston Red Sox 3-2 on March 2, 1989 in front of 6,892 fans.
-      </ul>
-
-      <h3>Other stadium firsts:</h3>
-
-      <table>
-        <thead>
-          <tr>
-            <td>Pitch</td>
-            <td>Batter</td>
-            <td>Hit</td>
-            <td>Home Run</td>
-            <td>Winning</td>
-            <td>Pitcher</td>
-            <td>Losing Pitcher</td>
-            <td>Save</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Jerry Reuss</td>
-            <td>Wade Boggs</td>
-            <td>Carlos Quintana</td>
-            <td>Dan Pasqua</td>
-            <td>Tom McCarthy</td>
-            <td>Mike Rochford</td>
-            <td>Bobby Thigpen</td>
-          </tr>
-        </tbody>
-      </table>
-
-
-
-    </div>
-    <div class="cell large-4">
-
-      <h3 class="margin-top">Ballpark Links</h3>
-      <ul class="ringBullet">
-        <li><a href="#">Seating Diagram</a></li>
-        <li><a href="#">Directions</a></li>
-        <li>For a complete ballpark guide, visit the <a href="#">Ed Smith Stadium page at Spring Training Connection</a></li>
-      </ul>
-
-      <div class="bpInfoBox bpInfoBox--red">
-        <h3>2017 Ballpark Info</h3>
-        <p><strong>When gates open:</strong><br>
-        1.5 hours before game</p>
-
-        <p><strong>Cost to park in stadium lots:</strong><br>
-        $15</p>
-
-        <p><strong>Kids who get in free:</strong><br>
-        32" tall and shorter<br>
-        <small>(must sit on an adult's lap)</small></p>
-      </div>
-
-
-    </div>
-  </div>
-
-<br>
-
-</div><!--.bpContent-->
-
-
-
-
-<div class="grid-container bpFooter">
-  <div class="grid-x grid-margin-x">
-    <div class="cell medium-6 large-3">
-
-      <div class="bpFooter__headingWrapper">
-        <i class="fas fa-info-circle"></i>
-        <h4>Website Info</h2>
-      </div>
-      <ul class="menu vertical">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Game-by-Game Log</a></li>
-        <li><a href="#">Links</a></li>
-        <li><a href="#">Park by Park List (by year)</a></li>
-        <li><a href="#">Site Map</a></li>
-      </ul>
-
-
-    </div>
-    <div class="cell medium-6 large-3">
-
-      <div class="bpFooter__headingWrapper">
-        <i class="fas fa-star"></i>
-        <h4>Featured Stories</h2>
-      </div>
-      <ul class="menu vertical">
-        <li><a href="#">Top 5 Major League Ballparks</a></li>
-        <li><a href="#">Ballpark Museum in Denver</a></li>
-        <li><a href="#">Baseball Road Trips</a></li>
-        <li><a href="#">Batting Practice</a></li>
-        <li><a href="#">Rickwood Field</a></li>
-        <li><a href="#">North Carolina Road Trip</a></li>
-        <li><a href="#">College World Series</a></li>
-      </ul>
-
-    </div>
-    <div class="cell medium-6 large-3">
-
-      <div class="bpFooter__headingWrapper">
-        <i class="fas fa-shopping-cart"></i>
-        <h4>New Store Items</h2>
-
-          <div class="callout">
-            <img src="img/thumbnail-travel-map.jpg" class="float-left" style="margin: 0 1.25rem 1.25rem 0;"><p><strong>Baseball Travel Map</strong><br>The 2017 Baseball Travel Map provides essential information for the roving fan.</p>
-          </div>
-
-          <div class="callout">
-            <img src="img/thumbnail-ballpark-map.jpg" class="float-left" style="margin: 1rem 1.25rem 1.5rem 0;"><p><strong>Ballpark Map Poster</strong><br>The just updated Touring the Majors poster will be a hit with baseball fans of all ages!</p>
-          </div>
-
-      </div>
-
-    </div>
-    <div class="cell medium-6 large-3" style="min-height: 340px;">
-
-      <div class="bpFooter__headingWrapper">
-        <i class="fas fa-comments"></i>
-        <h4>Connect</h2>
-        <p style="padding:1rem;font-size:.875rem;">We want to know what you think. Share your ballpark experiences or thoughts with the readers of Baseball Pilgrimages</p>
-        <div class="text-center"><a href="#" class="button small" style="min-width:12rem;">Contact us!</a></div>
-        <a class="bpFooter__fbLink"><img src="img/facebook-icon.png">LIKE US ON FACEBOOK</a>
-      </div>
-
-    </div>
-
-  </div>
-
-  <div style="clear:both;"></div>
-</div><!--.bpFooter-->
-<div class="grid-container bpCopyrightLine">
-  <div class="grid-x grid-margin-x">
     <div class="cell text-center">
 
-      <div class="bpCopyrightLine__text">Copyright © 2018 Baseball Enterprises, Inc. All Rights Reserved</div>
+      <div class="bpCopyrightLine__text">Copyright &copy; 2019 Copyright Baseball Enterprises, Inc. All Rights Reserved</div>
 
     </div>
   </div>
-</div><!--.bpWelcomeBlock-->
-
-<div class="reveal" id="searchModal" data-reveal>
-  <h1>Search</h1>
-  <p class="lead">Search BaseballPilgrimages.com.</p>
-  <div class="grid-x grid-margin-x">
-    <div class="cell medium-6 large-6">
-      <input type="text" style="width:100%;"></input>
-    </div>
-    <div class="cell medium-6 large-6">
-      <button class="button small">Search</button>
-    </div>
-  </div>
-
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
-<div class="reveal" id="sendToFriendModal" data-reveal>
-  <h1>Send link</h1>
-  <p class="lead">Complete the form below to send a link to this page:</p>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
+</div><!--.bpCopyrightLine-->
 
 <script src="js/app.js" type="text/javascript"></script>
+
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/js/foundation.js" type="text/javascript"></script>
 -->
