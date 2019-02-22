@@ -2736,7 +2736,7 @@ kbd {
   line-height: 1.6; }
 
 .stat {
-  font-size: 2.5rem;
+  font-size: 2.125rem;
   line-height: 1; }
   p + .stat {
     margin-top: -1rem; }
@@ -4100,10 +4100,10 @@ table {
     padding: 0.5rem 0.625rem 0.625rem;
     font-weight: bold; }
   thead {
-    background: #005297;
+    background: #1e478d;
     color: #fefefe; }
   tfoot {
-    background: #005297;
+    background: #1e478d;
     color: #fefefe; }
   thead tr,
   tfoot tr {
@@ -4146,10 +4146,10 @@ table.scroll {
   overflow-x: auto; }
 
 table.hover thead tr:hover {
-  background-color: #005297; }
+  background-color: #1e478d; }
 
 table.hover tfoot tr:hover {
-  background-color: #005297; }
+  background-color: #1e478d; }
 
 table.hover tbody tr:hover {
   background-color: #cae7ff; }
@@ -4549,6 +4549,9 @@ h5, h6 {
 
 pre {
   font-size: .875rem; }
+
+.stat {
+  margin-bottom: .75rem; }
 
 .accordion-title:hover {
   color: #fefefe;
@@ -5199,7 +5202,7 @@ pre {
   /* goes in grid cell */
   margin-top: 1rem;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 1rem 1rem .75rem;
   position: relative;
   background: #f4f4f4;
   background: linear-gradient(135deg, #f4f4f4 94%, transparent 94%); }
@@ -5827,10 +5830,10 @@ div.dataTables_scrollFoot table {
   background-color: #f7faff; }
 
 /*------------------------------------*\
-    DATATABLES SCROLLING FIX
+    DATATABLES
 \*------------------------------------*/
 @media print, screen and (min-width: 64em) {
-  .dataTables_scrollBody {
+  .dataTables_scrollBody, .dataTables_scrollHead {
     overflow: visible !important; } }
 
 .dataTables_scrollBody thead {
@@ -5853,6 +5856,18 @@ div.dataTables_scrollFoot table {
     border-radius: 10px 0 0 10px / 50% 0 0 50%;
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
     content: ''; } }
+
+tr.group,
+tr.group:hover {
+  background-color: #003263 !important;
+  line-height: 1.25 !important;
+  color: #fefefe; }
+  tr.group span,
+  tr.group:hover span {
+    color: #e6e6e6; }
+
+#dataTableBPDirectory {
+  line-height: 1 !important; }
 
 /*------------------------------------*\
     CONTACT FORM 7
@@ -5914,9 +5929,9 @@ span.wpcf7-not-valid-tip {
   .post-edit-link::after {
     clear: both; }
 
-.alignnone {
-  margin: 5px 20px 20px 0; }
-
+/*.alignnone {
+	margin:5px 20px 20px 0;
+}*/
 .aligncenter,
 div.aligncenter {
   display: block;
@@ -5934,9 +5949,9 @@ a img.alignright {
   float: right;
   margin: 5px 0 20px 20px; }
 
-a img.alignnone {
-  margin: 5px 20px 20px 0; }
-
+/*a img.alignnone {
+	margin:5px 20px 20px 0;
+}*/
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0; }
@@ -5953,9 +5968,9 @@ a img.aligncenter {
   padding: 5px 3px 10px;
   text-align: center; }
 
-.wp-caption.alignnone {
-  margin: 5px 20px 20px 0; }
-
+/*.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}*/
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0; }
 

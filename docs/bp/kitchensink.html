@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baseball Pilgrimages Kitchen Sink</title>
-  <link rel="stylesheet" href="app.css?v=1.3">
+  <link rel="stylesheet" href="app.css?v=1.4">
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/css/foundation.css">-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="icon" type="image/png" href="img/favicon.png">
@@ -13,6 +13,8 @@
   pre{padding:.5rem 1rem;}
   .callout{padding:0;}
   .bpLayout {min-height: 100px;}
+  #grid-example .grid-x{border: solid 1px #c6c6c6;background:#eee;margin-bottom:.5rem;}
+  #grid-example .grid-x .oddCell{background:#e0e0e0;}
   </style>
 </head>
 <body>
@@ -95,15 +97,43 @@
       <div class="cell medium-6">
         <div class="callout">
 <pre style="line-height: 3;">
-  &lt;p class=&quot;text-right&quot;&gt;This text is right-aligned&lt;/p&gt;
-  &lt;p class=&quot;text-center&quot;&gt;This text is center-aligned&lt;/p&gt;
-  &lt;p class=&quot;text-justify&quot;&gt;This text is justified...&lt;/p&gt;
+&lt;p class=&quot;text-right&quot;&gt;This text is right-aligned&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;This text is center-aligned&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;This text is justified...&lt;/p&gt;
 </pre>
         </div>
       </div>
     </div>
 
     <p><small>Any text element (aside from h1/h2s with heading bar enabled) can be aligned with these classes</small></p>
+
+
+  <hr>
+
+
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-6">
+
+<ul class="ringBullet">
+  <li>Alternate bulleted list</li>
+  <li>content</li>
+  <li>content</li>
+</ul>
+
+      </div>
+      <div class="cell medium-6">
+        <div class="callout">
+<pre>
+&#x3C;ul class=&#x22;ringBullet&#x22;&#x3E;
+  &#x3C;li&#x3E;Alternate bulleted list&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;content&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;content&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+</pre>
+        </div>
+      </div>
+    </div>
+
 
   </div>
 </div>
@@ -344,10 +374,12 @@ clear of any branches, and, if allowed to fall, would have fallen at our feet.&l
 <div class="bpLayout">
   <div class="bpLayout__fullWidthContent">
 
-    <p>Your theme uses Font Awesome icons. These icons are essentially a font and can be styled positioned accordingly. There are many icons including various arrows and shapes. <a href="https://fontawesome.com/icons?d=gallery" target="_blank">Click here</a> for a searchable list of the available icons. You can copy the icon code directly from their site on the individual icon pages.</p>
+    <p>Your theme uses Font Awesome icons. These icons are basically just a font and can be styled and positioned accordingly. There are many icons including various arrows and shapes. <a href="https://fontawesome.com/icons?d=gallery" target="_blank">Click here</a> for a searchable list of the available icons. You can copy the icon code directly from their site on the individual icon pages.</p>
 
     <div class="grid-x grid-padding-x">
       <div class="cell medium-5">
+
+<p><i class="fas fa-info-circle"></i></p>
 
 <p style="font-size:3rem;color:#b30a0a"><i class="fas fa-baseball-ball"></i></p>
 
@@ -361,6 +393,8 @@ clear of any branches, and, if allowed to fall, would have fallen at our feet.&l
       <div class="cell medium-7">
         <div class="callout">
 <pre>
+&#x3C;p&#x3E;&#x3C;i class=&#x22;fas fa-info-circle&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/p&#x3E;
+
 &#x3C;p style=&#x22;font-size:3rem;color:#b30a0a&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-baseball-ball&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/p&#x3E;
 
 &#x3C;p&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-arrow-circle-left margin-right&#x22;&#x3E;&#x3C;/i&#x3E;Back&#x3C;/a&#x3E;&#x3C;/p&#x3E;
@@ -373,6 +407,208 @@ clear of any branches, and, if allowed to fall, would have fallen at our feet.&l
 
   </div>
 </div>
+
+
+
+<div class="bpInfoBar bpInfoBar--americanLeague"><p class="text-center" style="margin:0;"><strong>Margin Classes</strong></p></div>
+<div class="bpLayout">
+  <div class="bpLayout__fullWidthContent">
+
+    <div class="grid-x grid-padding-x">
+      <div class="cell">
+
+<p>The stylesheet has 4 margin classes to add space between elements</p>
+
+<p>margin-top<br>
+margin-bottom<br>
+margin-left<br>
+margin-right</p>
+
+<p>These can be added to any element, however left and right will only work for block elements.</p>
+
+      </div>
+
+  </div>
+</div>
+
+
+
+
+
+<div class="bpInfoBar bpInfoBar--americanLeague"><p class="text-center" style="margin:0;"><strong>Grid Layout</strong></p></div>
+<div class="bpLayout">
+	<div class="bpLayout__fullWidthContent">
+
+
+
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-6" id="grid-example">
+
+        <div class="grid-x grid-padding-x">
+          <div class="cell small-2 large-4"><span class="hide-for-large">2</span><span class="show-for-large">4</span></div>
+          <div class="cell small-4 large-4 oddCell">4</div>
+          <div class="cell small-6 large-4"><span class="hide-for-large">6</span><span class="show-for-large">4</span></div>
+        </div>
+
+        <div class="grid-x grid-padding-x">
+          <div class="cell large-3"><span class="hide-for-large">full</span><span class="show-for-large">3</span></div>
+          <div class="cell large-6 oddCell"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
+          <div class="cell large-3"><span class="hide-for-large">full</span><span class="show-for-large">3</span></div>
+        </div>
+
+        <div class="grid-x grid-padding-x">
+          <div class="cell small-6 large-2"><span class="hide-for-large">6</span><span class="show-for-large">2</span></div>
+          <div class="cell small-6 large-8 oddCell"><span class="hide-for-large">6</span><span class="show-for-large">8</span></div>
+          <div class="cell small-12 large-2"><span class="hide-for-large">full</span><span class="show-for-large">2</span></div>
+        </div>
+
+        <div class="grid-x grid-padding-x">
+          <div class="cell small-3">3</div>
+          <div class="cell small-9 oddCell">9</div>
+        </div>
+
+        <div class="grid-x grid-padding-x">
+          <div class="cell large-4"><span class="hide-for-large">full</span><span class="show-for-large">4</span></div>
+          <div class="cell large-8 oddCell"><span class="hide-for-large">full</span><span class="show-for-large">8</span></div>
+        </div>
+
+        <div class="grid-x grid-padding-x">
+          <div class="cell small-6 large-5"><span class="hide-for-large">6</span><span class="show-for-large">5</span></div>
+          <div class="cell small-6 large-7 oddCell"><span class="hide-for-large">6</span><span class="show-for-large">7</span></div>
+        </div>
+
+        <div class="grid-x grid-padding-x">
+          <div class="cell large-6"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
+          <div class="cell large-6 oddCell"><span class="hide-for-large">full</span><span class="show-for-large">6</span></div>
+        </div>
+
+        <hr>
+
+        <p><code>grid-x</code> defines a row of columns<br>
+          <code>grid-padding-x</code> adds padding to the cells contained in the row<br>
+          <code>cell</code> defines a column within the row<br>
+          <code>small-# medium-# large-#</code> defines how wide the column should be at the given screen size (columns should up to 12)<br><br>
+          column widths will apply to larger screen sizes unless a different width is specified<br><br>
+          columns will default to full widths if no width is provided for a given screen size</p>
+
+
+      </div>
+      <div class="cell medium-6">
+        <div class="callout">
+<pre>
+&#x3C;div class=&#x22;grid-x grid-padding-x&#x22;&#x3E;
+  &#x3C;div class=&#x22;cell small-2 large-4&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;cell small-4 large-4&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;cell small-6 large-4&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;grid-x grid-padding-x&#x22;&#x3E;
+  &#x3C;div class=&#x22;cell large-3&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;cell large-6&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;cell large-3&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;grid-x grid-padding-x&#x22;&#x3E;
+  &#x3C;div class=&#x22;cell small-6 large-2&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;cell small-6 large-8&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;cell small-12 large-2&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;grid-x grid-padding-x&#x22;&#x3E;
+  &#x3C;div class=&#x22;cell small-3&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;cell small-9&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;grid-x grid-padding-x&#x22;&#x3E;
+  &#x3C;div class=&#x22;cell large-4&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;cell large-8&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;grid-x grid-padding-x&#x22;&#x3E;
+  &#x3C;div class=&#x22;cell small-6 large-5&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;cell small-6 large-7&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;div class=&#x22;grid-x grid-padding-x&#x22;&#x3E;
+  &#x3C;div class=&#x22;cell large-6&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+  &#x3C;div class=&#x22;cell large-6&#x22;&#x3E;&#x3C;!-- ... --&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+</pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="bpInfoBar bpInfoBar--americanLeague"><p class="text-center" style="margin:0;"><strong>Visibility Classes</strong></p></div>
+<div class="bpLayout">
+	<div class="bpLayout__fullWidthContent">
+
+    <p>The classes below can be used to hide/show content based on the width of the user's browser. They can be applied to any element.</p>
+    <p>There are 4 screen sizes defined in the css: small (0 - 640px), medium (640px - 1024px), large (1024px - 1200px), and xlarge (1200px and up). This is a <span class="show-for-small-only" style="color:red;">SMALL</span> <span class="show-for-medium-only" style="color:red;">MEDIUM</span> <span class="show-for-large-only" style="color:red;">LARGE</span> <span class="show-for-xlarge-only" style="color:red;">XLARGE</span> screen.</p>
+    <br>
+
+    <div class="grid-x grid-padding-x">
+      <div class="cell medium-6">
+
+<h4>Show by Screen Size</h4>
+
+<p>You are on a small screen or larger.</p>
+<p class="show-for-medium">You are on a medium screen or larger.</p>
+<p class="show-for-large">You are on a large screen or larger.</p>
+
+<p class="show-for-small-only">You are <em>definitely</em> on a small screen.</p>
+<p class="show-for-medium-only">You are <em>definitely</em> on a medium screen.</p>
+<p class="show-for-large-only">You are <em>definitely</em> on a large screen.</p>
+<p class="show-for-xlarge-only">You are <em>definitely</em> on a xlarge screen.</p>
+
+<hr>
+
+<h4>Hide by Screen Size</h4>
+
+<p class="hide-for-medium">You are <em>not</em> on a medium screen or larger.</p>
+<p class="hide-for-large">You are <em>not</em> on a large screen or larger.</p>
+
+<p class="hide-for-small-only">You are <em>definitely not</em> on a small screen.</p>
+<p class="hide-for-medium-only">You are <em>definitely not</em> on a medium screen.</p>
+<p class="hide-for-large-only">You are <em>definitely not</em> on a large screen.</p>
+<p class="hide-for-xlarge-only">You are <em>definitely not</em> on a xlarge screen.</p>
+
+
+      </div>
+      <div class="cell medium-6">
+        <div class="callout">
+<pre>
+&#x3C;h4&#x3E;Show by Screen Size&#x3C;/h4&#x3E;
+
+&#x3C;p&#x3E;You are on a small screen or larger.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;show-for-medium&#x22;&#x3E;You are on a medium screen or larger.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;show-for-large&#x22;&#x3E;You are on a large screen or larger.&#x3C;/p&#x3E;
+
+&#x3C;p class=&#x22;show-for-small-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely&#x3C;/em&#x3E; on a small screen.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;show-for-medium-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely&#x3C;/em&#x3E; on a medium screen.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;show-for-large-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely&#x3C;/em&#x3E; on a large screen.&#x3C;/p&#x3E;
+
+&#x3C;hr&#x3E;
+
+&#x3C;h4&#x3E;Hide by Screen Size&#x3C;/h4&#x3E;
+
+&#x3C;p class=&#x22;hide-for-medium&#x22;&#x3E;You are &#x3C;em&#x3E;not&#x3C;/em&#x3E; on a medium screen or larger.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;hide-for-large&#x22;&#x3E;You are &#x3C;em&#x3E;not&#x3C;/em&#x3E; on a large screen or larger.&#x3C;/p&#x3E;
+
+&#x3C;p class=&#x22;hide-for-small-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely not&#x3C;/em&#x3E; on a small screen.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;hide-for-medium-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely not&#x3C;/em&#x3E; on a medium screen.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;hide-for-large-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely not&#x3C;/em&#x3E; on a large screen.&#x3C;/p&#x3E;
+</pre>
+        </div>
+      </div>
+    </div>
+
+    <p><small>There's no .hide-for-small class, because that would just permanently hide the element.</small></p>
+
+  </div>
+</div>
+
+
+
 
 
 <div class="bpInfoBar bpInfoBar--americanLeague"><p class="text-center" style="margin:0;"><strong>DataTables</strong></p></div>
@@ -460,74 +696,6 @@ clear of any branches, and, if allowed to fall, would have fallen at our feet.&l
 </div>
 
 
-<div class="bpInfoBar bpInfoBar--americanLeague"><p class="text-center" style="margin:0;"><strong>Visibility Classes</strong></p></div>
-<div class="bpLayout">
-	<div class="bpLayout__fullWidthContent">
-
-    <p>The classes below can be used to hide/show content based on the width of the user's browser. They can be applied to any element.</p>
-    <p>There are 3 defined sizes: small (0 - 640px), medium (640px - 1024px), large (1024px - 1200px), and xlarge (1200px and up). This is a <span class="show-for-small-only" style="color:red;">SMALL</span> <span class="show-for-medium-only" style="color:red;">MEDIUM</span> <span class="show-for-large-only" style="color:red;">LARGE</span> <span class="show-for-xlarge-only" style="color:red;">XLARGE</span> screen.</p>
-    <br>
-
-    <div class="grid-x grid-padding-x">
-      <div class="cell medium-6">
-
-<h4>Show by Screen Size</h4>
-
-<p>You are on a small screen or larger.</p>
-<p class="show-for-medium">You are on a medium screen or larger.</p>
-<p class="show-for-large">You are on a large screen or larger.</p>
-
-<p class="show-for-small-only">You are <em>definitely</em> on a small screen.</p>
-<p class="show-for-medium-only">You are <em>definitely</em> on a medium screen.</p>
-<p class="show-for-large-only">You are <em>definitely</em> on a large screen.</p>
-<p class="show-for-xlarge-only">You are <em>definitely</em> on a xlarge screen.</p>
-
-<hr>
-
-<h4>Hide by Screen Size</h4>
-
-<p class="hide-for-medium">You are <em>not</em> on a medium screen or larger.</p>
-<p class="hide-for-large">You are <em>not</em> on a large screen or larger.</p>
-
-<p class="hide-for-small-only">You are <em>definitely not</em> on a small screen.</p>
-<p class="hide-for-medium-only">You are <em>definitely not</em> on a medium screen.</p>
-<p class="hide-for-large-only">You are <em>definitely not</em> on a large screen.</p>
-<p class="hide-for-xlarge-only">You are <em>definitely not</em> on a xlarge screen.</p>
-
-
-      </div>
-      <div class="cell medium-6">
-        <div class="callout">
-<pre>
-&#x3C;h4&#x3E;Show by Screen Size&#x3C;/h4&#x3E;
-
-&#x3C;p&#x3E;You are on a small screen or larger.&#x3C;/p&#x3E;
-&#x3C;p class=&#x22;show-for-medium&#x22;&#x3E;You are on a medium screen or larger.&#x3C;/p&#x3E;
-&#x3C;p class=&#x22;show-for-large&#x22;&#x3E;You are on a large screen or larger.&#x3C;/p&#x3E;
-
-&#x3C;p class=&#x22;show-for-small-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely&#x3C;/em&#x3E; on a small screen.&#x3C;/p&#x3E;
-&#x3C;p class=&#x22;show-for-medium-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely&#x3C;/em&#x3E; on a medium screen.&#x3C;/p&#x3E;
-&#x3C;p class=&#x22;show-for-large-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely&#x3C;/em&#x3E; on a large screen.&#x3C;/p&#x3E;
-
-&#x3C;hr&#x3E;
-
-&#x3C;h4&#x3E;Hide by Screen Size&#x3C;/h4&#x3E;
-
-&#x3C;p class=&#x22;hide-for-medium&#x22;&#x3E;You are &#x3C;em&#x3E;not&#x3C;/em&#x3E; on a medium screen or larger.&#x3C;/p&#x3E;
-&#x3C;p class=&#x22;hide-for-large&#x22;&#x3E;You are &#x3C;em&#x3E;not&#x3C;/em&#x3E; on a large screen or larger.&#x3C;/p&#x3E;
-
-&#x3C;p class=&#x22;hide-for-small-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely not&#x3C;/em&#x3E; on a small screen.&#x3C;/p&#x3E;
-&#x3C;p class=&#x22;hide-for-medium-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely not&#x3C;/em&#x3E; on a medium screen.&#x3C;/p&#x3E;
-&#x3C;p class=&#x22;hide-for-large-only&#x22;&#x3E;You are &#x3C;em&#x3E;definitely not&#x3C;/em&#x3E; on a large screen.&#x3C;/p&#x3E;
-</pre>
-        </div>
-      </div>
-    </div>
-
-    <p><small>There's no .hide-for-small class, because that would just permanently hide the element.</small></p>
-
-  </div>
-</div>
 
 
 
@@ -541,7 +709,7 @@ clear of any branches, and, if allowed to fall, would have fallen at our feet.&l
   </div>
 </div><!--.bpCopyrightLine-->
 
-<script src="js/app.js" type="text/javascript"></script>
+<script src="js/app.js?v=1.0" type="text/javascript"></script>
 
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/js/foundation.js" type="text/javascript"></script>
