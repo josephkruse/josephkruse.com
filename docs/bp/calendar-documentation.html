@@ -1,0 +1,491 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baseball Pilgrimages Calendar Boilerplate</title>
+  <link rel="stylesheet" href="app.css?v=1.3">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/css/foundation.css">-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <style>pre{margin:1rem 0;}</style>
+</head>
+<body>
+<div class="bpInfoBar bpInfoBar--americanLeague" style="width:100%;max-width:100%;"><h5 class="text-center" style="margin:0;padding:1rem;color:#fff;"><strong>Calendar Documentation</strong></h5></div>
+<div class="bpLayout" style="width:100%;max-width:100%;">
+
+  <div class="grid-x grid-padding-x">
+    <div class="cell medium-7">
+      <h3 class="text-center">Result</h3>
+
+      <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+        <li class="accordion-item bpCalendar is-active" data-accordion-item><!-- BEGIN FEB -->
+          <a name="february"></a>
+          <a href="#" class="bpCalendar__titleHeading">February 2019</a>
+          <div class="accordion-content" data-calendar-hide-date="2019-3-1" data-tab-content>
+
+              <ul class="bpCalendar__dayNamesContainer">
+                <li class="bpCalendar__dayName">Sunday</li>
+                <li class="bpCalendar__dayName">Monday</li>
+                <li class="bpCalendar__dayName">Tuesday</li>
+                <li class="bpCalendar__dayName">Wednesday</li>
+                <li class="bpCalendar__dayName">Thursday</li>
+                <li class="bpCalendar__dayName">Friday</li>
+                <li class="bpCalendar__dayName">Saturday</li>
+              </ul>
+
+              <!-- Row #1 -->
+              <ul class="bpCalendar__weekContainer">
+
+                <!-- Days from previous month -->
+                <li class="day day--otherMonth"></li>
+                <li class="day day--otherMonth"></li>
+                <li class="day day--otherMonth"></li>
+                <li class="day day--otherMonth"></li>
+                <li class="day day--otherMonth"></li>
+
+                <!-- Days in current month -->
+                <li class="day">
+                    <div class="dayForMobile">Friday, February</div>
+                    <div class="dayDate">1</div>
+                </li>
+                <li class="day">
+                    <div class="dayForMobile">Saturday, February</div>
+                    <div class="dayDate">2</div>
+                </li>
+              </ul>
+
+              <!-- Row #2 -->
+              <ul class="bpCalendar__weekContainer">
+                <li class="day">
+                  <div class="dayForMobile">Sunday, February</div>
+                  <div class="dayDate">3</div>
+                </li>
+                <li class="day day--withEvent">
+                  <div class="dayForMobile">Monday, February</div>
+                    <div class="dayDate">4</div>
+                    <div class="event">
+                        <h5>Indians <div class="homeTeamForMobile">@ LA</div></h5>
+                        <a href="#" class="button tiny">Tickets</a>
+                        <p class="eventTime">1:07</p>
+                      </div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Tuesday, February</div>
+                  <div class="dayDate">5</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Wednesday, February</div>
+                  <div class="dayDate">6</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Thursday, February</div>
+                  <div class="dayDate">7</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Friday, February</div>
+                  <div class="dayDate">8</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Saturday, February</div>
+                  <div class="dayDate">9</div>
+                </li>
+              </ul>
+
+              <!-- Row #3 -->
+              <ul class="bpCalendar__weekContainer">
+                <li class="day">
+                  <div class="dayForMobile">Sunday, February</div>
+                  <div class="dayDate">10</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Monday, February</div>
+                  <div class="dayDate">11</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Tuesday, February</div>
+                  <div class="dayDate">12</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Wednesday, February</div>
+                  <div class="dayDate">13</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Thursday, February</div>
+                  <div class="dayDate">14</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Friday, February</div>
+                  <div class="dayDate">15</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Saturday, February</div>
+                  <div class="dayDate">16</div>
+                </li>
+              </ul>
+
+              <!-- Row #4 -->
+              <ul class="bpCalendar__weekContainer">
+                <li class="day">
+                  <div class="dayForMobile">Sunday, February</div>
+                  <div class="dayDate">17</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Monday, February</div>
+                  <div class="dayDate">18</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Tuesday, February</div>
+                  <div class="dayDate">19</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Wednesday, February</div>
+                  <div class="dayDate">20</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Thursday, February</div>
+                  <div class="dayDate">21</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Friday, February</div>
+                  <div class="dayDate">22</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Saturday, February</div>
+                  <div class="dayDate">23</div>
+                </li>
+              </ul>
+
+              <!-- Row #5 -->
+              <ul class="bpCalendar__weekContainer">
+                <li class="day">
+                  <div class="dayForMobile">Sunday, February</div>
+                  <div class="dayDate">24</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Monday, February</div>
+                  <div class="dayDate">25</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Tuesday, February</div>
+                  <div class="dayDate">26</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Wednesday, February</div>
+                  <div class="dayDate">27</div>
+                </li>
+                <li class="day">
+                  <div class="dayForMobile">Thursday, February</div>
+                  <div class="dayDate">28</div>
+                </li>
+                <li class="day day--otherMonth"></li>
+                <li class="day day--otherMonth"></li>
+              </ul>
+
+          </div>
+        </li><!-- END FEB -->
+      </ul>
+
+      <hr style="margin:2rem;">
+
+      <h3 class="text-center">Adding an event</h3>
+
+      <p>To add an event just replace the day li tag with the following. Or you can add the missing elements (highlighted in red). <p>
+
+<pre>
+  &lt;li class=&quot;day <span style="color:red;">day--withEvent</span>&quot;&gt;
+    &lt;div class=&quot;dayForMobile&quot;&gt;Monday, February&lt;/div&gt;
+      &lt;div class=&quot;dayDate&quot;&gt;4&lt;/div&gt;
+      <span style="color:red;">&lt;div class=&quot;event&quot;&gt;
+          &lt;h5&gt;Indians &lt;div class=&quot;homeTeamForMobile&quot;&gt;@ LA&lt;/div&gt;&lt;/h5&gt;
+          &lt;a href=&quot;#&quot; class=&quot;button tiny&quot;&gt;Tickets&lt;/a&gt;
+          &lt;p class=&quot;eventTime&quot;&gt;1:07&lt;/p&gt;
+        &lt;/div&gt;</span>
+  &lt;/li&gt;
+</pre>
+
+      <p>
+
+      <hr style="margin:2rem;">
+
+      <h3 class="text-center">Explanation of calendar elements</h3>
+
+      <div class="callout">
+        <pre>&lt;ul class=&quot;accordion&quot; data-accordion data-multi-expand=&quot;true&quot; data-allow-all-closed=&quot;true&quot;&gt;</pre>
+
+        <p>The accordion parent container that houses all of the collapseable elements. (The data attributes define whether it allows multiple accordion elements open at once, and whether it allows months to be closed at one time.)</p>
+      </div>
+
+      <div class="callout">
+        <pre>&lt;li class=&quot;accordion-item bpCalendar is-active&quot; data-accordion-item&gt;&lt;!-- BEGIN FEB --&gt;</pre>
+
+        <p>The accordion container for all the month accordion content.</p>
+      </div>
+
+      <div class="callout">
+        <pre>&lt;a name=&quot;february&quot;&gt;&lt;/a&gt;</pre>
+
+        <p>A tag used for anchor links to jump to this specific month within the page.</p>
+      </div>
+
+      <div class="callout">
+        <pre>&lt;a href=&quot;#&quot; class=&quot;bpCalendar__titleHeading&quot;&gt;February 2019&lt;/a&gt;</pre>
+
+        <p>Month title and clickable element that triggers open/close of accordion.</p>
+      </div>
+
+      <div class="callout">
+        <pre>&lt;div class=&quot;accordion-content&quot; data-calendar-hide-date=&quot;2019-3-1&quot; data-tab-content&gt;</pre>
+
+        <p>Content of accordion that is hidden and shown based on current status. The data-calendar-hide-date defines when the calendar will be automatically collapsed on page load.</p>
+      </div>
+
+      <div class="callout">
+        <pre>
+&lt;ul class=&quot;bpCalendar__dayNamesContainer&quot;&gt;
+  &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Sunday&lt;/li&gt;
+  &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Monday&lt;/li&gt;
+  &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Tuesday&lt;/li&gt;
+  &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Wednesday&lt;/li&gt;
+  &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Thursday&lt;/li&gt;
+  &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Friday&lt;/li&gt;
+  &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Saturday&lt;/li&gt;
+&lt;/ul&gt;
+        </pre>
+
+        <p>Day of the week column labels.</p>
+      </div>
+
+      <div class="callout">
+        <pre>
+&lt;!-- Row #1 --&gt;
+&lt;ul class=&quot;bpCalendar__weekContainer&quot;&gt;
+
+  &lt;!-- Days from previous month --&gt;
+  &lt;li class=&quot;day day--otherMonth&quot;&gt;&lt;/li&gt;
+  &lt;li class=&quot;day day--otherMonth&quot;&gt;&lt;/li&gt;
+  &lt;li class=&quot;day day--otherMonth&quot;&gt;&lt;/li&gt;
+  &lt;li class=&quot;day day--otherMonth&quot;&gt;&lt;/li&gt;
+  &lt;li class=&quot;day day--otherMonth&quot;&gt;&lt;/li&gt;
+
+  &lt;!-- Days in current month --&gt;
+  &lt;li class=&quot;day&quot;&gt;
+      &lt;div class=&quot;dayForMobile&quot;&gt;Friday, February&lt;/div&gt;
+      &lt;div class=&quot;dayDate&quot;&gt;1&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;day&quot;&gt;
+      &lt;div class=&quot;dayForMobile&quot;&gt;Saturday, February&lt;/div&gt;
+      &lt;div class=&quot;dayDate&quot;&gt;2&lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+        </pre>
+
+        <p>Week container with 7 day elements within. Days from previous month are marked with day--other month modifier class.</p>
+      </div>
+
+            <div class="callout">
+              <pre>
+&lt;li class=&quot;day day--withEvent&quot;&gt;
+  &lt;div class=&quot;dayForMobile&quot;&gt;Monday, February&lt;/div&gt;
+    &lt;div class=&quot;dayDate&quot;&gt;4&lt;/div&gt;
+    &lt;div class=&quot;event&quot;&gt;
+        &lt;h5&gt;Indians &lt;div class=&quot;homeTeamForMobile&quot;&gt;@ LA&lt;/div&gt;&lt;/h5&gt;
+        &lt;a href=&quot;#&quot; class=&quot;button tiny&quot;&gt;Tickets&lt;/a&gt;
+        &lt;p class=&quot;eventTime&quot;&gt;1:07&lt;/p&gt;
+      &lt;/div&gt;
+&lt;/li&gt;
+              </pre>
+
+              <p>Day element with event information. The day--withEvent modifier class tells browser to show this day on the mobile view.</p>
+            </div>
+
+    </div>
+    <div class="cell medium-5">
+      <h3 class="text-center">Code</h3>
+
+<pre>
+&lt;ul class=&quot;accordion&quot; data-accordion data-multi-expand=&quot;true&quot; data-allow-all-closed=&quot;true&quot;&gt;
+  &lt;li class=&quot;accordion-item bpCalendar is-active&quot; data-accordion-item&gt;&lt;!-- BEGIN FEB --&gt;
+    &lt;a name=&quot;february&quot;&gt;&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;bpCalendar__titleHeading&quot;&gt;February 2019&lt;/a&gt;
+    &lt;div class=&quot;accordion-content&quot; data-calendar-hide-date=&quot;2019-3-1&quot; data-tab-content&gt;
+
+        &lt;ul class=&quot;bpCalendar__dayNamesContainer&quot;&gt;
+          &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Sunday&lt;/li&gt;
+          &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Monday&lt;/li&gt;
+          &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Tuesday&lt;/li&gt;
+          &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Wednesday&lt;/li&gt;
+          &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Thursday&lt;/li&gt;
+          &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Friday&lt;/li&gt;
+          &lt;li class=&quot;bpCalendar__dayName&quot;&gt;Saturday&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;!-- Row #1 --&gt;
+        &lt;ul class=&quot;bpCalendar__weekContainer&quot;&gt;
+
+          &lt;!-- Days from previous month --&gt;
+          &lt;li class=&quot;day day--otherMonth&quot;&gt;&lt;/li&gt;
+          &lt;li class=&quot;day day--otherMonth&quot;&gt;&lt;/li&gt;
+          &lt;li class=&quot;day day--otherMonth&quot;&gt;&lt;/li&gt;
+          &lt;li class=&quot;day day--otherMonth&quot;&gt;&lt;/li&gt;
+          &lt;li class=&quot;day day--otherMonth&quot;&gt;&lt;/li&gt;
+
+          &lt;!-- Days in current month --&gt;
+          &lt;li class=&quot;day&quot;&gt;
+              &lt;div class=&quot;dayForMobile&quot;&gt;Friday, February&lt;/div&gt;
+              &lt;div class=&quot;dayDate&quot;&gt;1&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+              &lt;div class=&quot;dayForMobile&quot;&gt;Saturday, February&lt;/div&gt;
+              &lt;div class=&quot;dayDate&quot;&gt;2&lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;!-- Row #2 --&gt;
+        &lt;ul class=&quot;bpCalendar__weekContainer&quot;&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Sunday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;3&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day day--withEvent&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Monday, February&lt;/div&gt;
+              &lt;div class=&quot;dayDate&quot;&gt;4&lt;/div&gt;
+              &lt;div class=&quot;event&quot;&gt;
+                  &lt;h5&gt;Indians &lt;div class=&quot;homeTeamForMobile&quot;&gt;@ LA&lt;/div&gt;&lt;/h5&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;button tiny&quot;&gt;Tickets&lt;/a&gt;
+                  &lt;p class=&quot;eventTime&quot;&gt;1:07&lt;/p&gt;
+                &lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Tuesday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;5&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Wednesday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;6&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Thursday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;7&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Friday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;8&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Saturday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;9&lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;!-- Row #3 --&gt;
+        &lt;ul class=&quot;bpCalendar__weekContainer&quot;&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Sunday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;10&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Monday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;11&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Tuesday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;12&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Wednesday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;13&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Thursday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;14&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Friday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;15&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Saturday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;16&lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;!-- Row #4 --&gt;
+        &lt;ul class=&quot;bpCalendar__weekContainer&quot;&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Sunday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;17&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Monday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;18&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Tuesday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;19&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Wednesday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;20&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Thursday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;21&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Friday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;22&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Saturday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;23&lt;/div&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;!-- Row #5 --&gt;
+        &lt;ul class=&quot;bpCalendar__weekContainer&quot;&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Sunday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;24&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Monday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;25&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Tuesday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;26&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Wednesday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;27&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day&quot;&gt;
+            &lt;div class=&quot;dayForMobile&quot;&gt;Thursday, February&lt;/div&gt;
+            &lt;div class=&quot;dayDate&quot;&gt;28&lt;/div&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;day day--otherMonth&quot;&gt;&lt;/li&gt;
+          &lt;li class=&quot;day day--otherMonth&quot;&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/div&gt;
+  &lt;/li&gt;&lt;!-- END FEB --&gt;
+
+  &#x3C;li...(additional month elements)
+
+&#x3C;/ul&#x3E;
+</pre>
+
+    </div>
+  </div>
+
+<hr>
+
+
+</div>
+
+<script src="js/app.js" type="text/javascript"></script>
+
+</body>
+</html>

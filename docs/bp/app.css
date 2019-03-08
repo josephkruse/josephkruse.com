@@ -339,7 +339,7 @@ template {
   display: none; }
 
 .foundation-mq {
-  font-family: "small=0em&medium=40em&large=64em&xlarge=75em&xxlarge=90em"; }
+  font-family: "small=0em&medium=40em&large=64em&xlarge=75em"; }
 
 html {
   box-sizing: border-box;
@@ -2736,7 +2736,7 @@ kbd {
   line-height: 1.6; }
 
 .stat {
-  font-size: 2.5rem;
+  font-size: 2.125rem;
   line-height: 1; }
   p + .stat {
     margin-top: -1rem; }
@@ -4100,10 +4100,10 @@ table {
     padding: 0.5rem 0.625rem 0.625rem;
     font-weight: bold; }
   thead {
-    background: #005297;
+    background: #1e478d;
     color: #fefefe; }
   tfoot {
-    background: #005297;
+    background: #1e478d;
     color: #fefefe; }
   thead tr,
   tfoot tr {
@@ -4146,10 +4146,10 @@ table.scroll {
   overflow-x: auto; }
 
 table.hover thead tr:hover {
-  background-color: #005297; }
+  background-color: #1e478d; }
 
 table.hover tfoot tr:hover {
-  background-color: #005297; }
+  background-color: #1e478d; }
 
 table.hover tbody tr:hover {
   background-color: #cae7ff; }
@@ -4247,6 +4247,94 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   vertical-align: middle;
   font-weight: bold; }
 
+.has-tip {
+  position: relative;
+  display: inline-block;
+  border-bottom: dotted 1px #666;
+  font-weight: bold;
+  cursor: help; }
+
+.tooltip {
+  position: absolute;
+  top: calc(100% + 0.6495rem);
+  z-index: 1200;
+  max-width: 10rem;
+  padding: 0.75rem;
+  border-radius: 0;
+  background-color: #0a0a0a;
+  font-size: 80%;
+  color: #fefefe; }
+  .tooltip::before {
+    position: absolute; }
+  .tooltip.bottom::before {
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 0.75rem;
+    content: '';
+    border-top-width: 0;
+    border-bottom-style: solid;
+    border-color: transparent transparent #0a0a0a;
+    bottom: 100%; }
+  .tooltip.bottom.align-center::before {
+    left: 50%;
+    transform: translateX(-50%); }
+  .tooltip.top::before {
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 0.75rem;
+    content: '';
+    border-bottom-width: 0;
+    border-top-style: solid;
+    border-color: #0a0a0a transparent transparent;
+    top: 100%;
+    bottom: auto; }
+  .tooltip.top.align-center::before {
+    left: 50%;
+    transform: translateX(-50%); }
+  .tooltip.left::before {
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 0.75rem;
+    content: '';
+    border-right-width: 0;
+    border-left-style: solid;
+    border-color: transparent transparent transparent #0a0a0a;
+    left: 100%; }
+  .tooltip.left.align-center::before {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%); }
+  .tooltip.right::before {
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 0.75rem;
+    content: '';
+    border-left-width: 0;
+    border-right-style: solid;
+    border-color: transparent #0a0a0a transparent transparent;
+    right: 100%;
+    left: auto; }
+  .tooltip.right.align-center::before {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%); }
+  .tooltip.align-top::before {
+    bottom: auto;
+    top: 10%; }
+  .tooltip.align-bottom::before {
+    bottom: 10%;
+    top: auto; }
+  .tooltip.align-left::before {
+    left: 10%;
+    right: auto; }
+  .tooltip.align-right::before {
+    left: auto;
+    right: 10%; }
+
 .top-bar {
   display: flex;
   flex-wrap: nowrap;
@@ -4292,13 +4380,12 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
       .top-bar.stacked-for-large .top-bar-right {
         flex: 0 0 100%;
         max-width: 100%; } }
-  @media screen and (max-width: 89.99875em) {
-    .top-bar.stacked-for-xlarge {
-      flex-wrap: wrap; }
-      .top-bar.stacked-for-xlarge .top-bar-left,
-      .top-bar.stacked-for-xlarge .top-bar-right {
-        flex: 0 0 100%;
-        max-width: 100%; } }
+  .top-bar.stacked-for-xlarge {
+    flex-wrap: wrap; }
+    .top-bar.stacked-for-xlarge .top-bar-left,
+    .top-bar.stacked-for-xlarge .top-bar-right {
+      flex: 0 0 100%;
+      max-width: 100%; }
 
 .top-bar-title {
   flex: 0 0 auto;
@@ -4362,11 +4449,11 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   .show-for-xlarge {
     display: none !important; } }
 
-@media screen and (min-width: 75em) and (max-width: 89.99875em) {
+@media screen and (min-width: 75em) {
   .hide-for-xlarge-only {
     display: none !important; } }
 
-@media screen and (max-width: 74.99875em), screen and (min-width: 90em) {
+@media screen and (max-width: 74.99875em) {
   .show-for-xlarge-only {
     display: none !important; } }
 
@@ -4462,6 +4549,9 @@ h5, h6 {
 
 pre {
   font-size: .875rem; }
+
+.stat {
+  margin-bottom: .75rem; }
 
 .accordion-title:hover {
   color: #fefefe;
@@ -4922,28 +5012,6 @@ pre {
       .bpInfoBar p {
         margin: .675rem 0; } }
 
-@media screen and (max-width: 63.99875em) {
-  table:not(.dataTable) {
-    max-width: 100%;
-    overflow-x: scroll;
-    overflow-y: auto;
-    display: block; }
-  .scrolling-table {
-    position: relative;
-    overflow: hidden;
-    margin: 1rem 0; }
-    .scrolling-table table {
-      margin: 0; }
-  .scrolling-table:after {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 50px;
-    height: 100%;
-    border-radius: 10px 0 0 10px / 50% 0 0 50%;
-    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
-    content: ''; } }
-
 .bpLayout {
   max-width: 78.75rem;
   min-height: 240px;
@@ -5134,7 +5202,7 @@ pre {
   /* goes in grid cell */
   margin-top: 1rem;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 1rem 1rem .75rem;
   position: relative;
   background: #f4f4f4;
   background: linear-gradient(135deg, #f4f4f4 94%, transparent 94%); }
@@ -5151,41 +5219,27 @@ pre {
   .bpInfoBox--small p {
     font-size: .875rem;
     margin: 0 0 .75rem .125rem; }
-  .bpInfoBox--red {
+  .bpInfoBox--americanLeague, .bpInfoBox--red {
     background: #d01414;
     background: linear-gradient(135deg, #b30a0a 94%, transparent 94%);
     color: #fefefe; }
-    .bpInfoBox--red h1, .bpInfoBox--red h2, .bpInfoBox--red h3, .bpInfoBox--red h4, .bpInfoBox--red h5, .bpInfoBox--red h6, .bpInfoBox--red p, .bpInfoBox--red a, .bpInfoBox--red a:hover {
+    .bpInfoBox--americanLeague h1, .bpInfoBox--americanLeague h2, .bpInfoBox--americanLeague h3, .bpInfoBox--americanLeague h4, .bpInfoBox--americanLeague h5, .bpInfoBox--americanLeague h6, .bpInfoBox--americanLeague p, .bpInfoBox--americanLeague a, .bpInfoBox--americanLeague a:hover, .bpInfoBox--red h1, .bpInfoBox--red h2, .bpInfoBox--red h3, .bpInfoBox--red h4, .bpInfoBox--red h5, .bpInfoBox--red h6, .bpInfoBox--red p, .bpInfoBox--red a, .bpInfoBox--red a:hover {
       color: #fefefe; }
-    .bpInfoBox--red a {
+    .bpInfoBox--americanLeague a, .bpInfoBox--red a {
       text-decoration: underline; }
-  .bpInfoBox--americanLeague {
-    background: #d01414;
-    background: linear-gradient(135deg, #b30a0a 94%, transparent 94%);
-    color: #fefefe; }
-    .bpInfoBox--americanLeague h1, .bpInfoBox--americanLeague h2, .bpInfoBox--americanLeague h3, .bpInfoBox--americanLeague h4, .bpInfoBox--americanLeague h5, .bpInfoBox--americanLeague h6, .bpInfoBox--americanLeague p, .bpInfoBox--americanLeague a, .bpInfoBox--americanLeague a:hover {
-      color: #fefefe; }
-    .bpInfoBox--americanLeague a {
-      text-decoration: underline; }
-  .bpInfoBox--blue {
+  .bpInfoBox--nationalLeague, .bpInfoBox--blue {
     background: #d01414;
     background: linear-gradient(135deg, #003263 94%, transparent 94%);
     color: #fefefe; }
-    .bpInfoBox--blue h1, .bpInfoBox--blue h2, .bpInfoBox--blue h3, .bpInfoBox--blue h4, .bpInfoBox--blue h5, .bpInfoBox--blue h6, .bpInfoBox--blue p, .bpInfoBox--blue a, .bpInfoBox--blue a:hover {
+    .bpInfoBox--nationalLeague h1, .bpInfoBox--nationalLeague h2, .bpInfoBox--nationalLeague h3, .bpInfoBox--nationalLeague h4, .bpInfoBox--nationalLeague h5, .bpInfoBox--nationalLeague h6, .bpInfoBox--nationalLeague p, .bpInfoBox--nationalLeague a, .bpInfoBox--nationalLeague a:hover, .bpInfoBox--blue h1, .bpInfoBox--blue h2, .bpInfoBox--blue h3, .bpInfoBox--blue h4, .bpInfoBox--blue h5, .bpInfoBox--blue h6, .bpInfoBox--blue p, .bpInfoBox--blue a, .bpInfoBox--blue a:hover {
       color: #fefefe; }
-    .bpInfoBox--blue a {
+    .bpInfoBox--nationalLeague a, .bpInfoBox--blue a {
       text-decoration: underline; }
-  .bpInfoBox--nationalLeague {
-    background: #d01414;
-    background: linear-gradient(135deg, #003263 94%, transparent 94%);
-    color: #fefefe; }
-    .bpInfoBox--nationalLeague h1, .bpInfoBox--nationalLeague h2, .bpInfoBox--nationalLeague h3, .bpInfoBox--nationalLeague h4, .bpInfoBox--nationalLeague h5, .bpInfoBox--nationalLeague h6, .bpInfoBox--nationalLeague p, .bpInfoBox--nationalLeague a, .bpInfoBox--nationalLeague a:hover {
-      color: #fefefe; }
-    .bpInfoBox--nationalLeague a {
-      text-decoration: underline; }
-  .bpInfoBox--grapefruitLeague, .bpInfoBox--orange {
+  .bpInfoBox--grapefruitLeague, .bpInfoBox--orange, .bpInfoBox--yellow {
     background: linear-gradient(135deg, #f3de63 94%, transparent 94%); }
-    .bpInfoBox--grapefruitLeague h3, .bpInfoBox--orange h3 {
+    .bpInfoBox--grapefruitLeague h3, .bpInfoBox--orange h3, .bpInfoBox--yellow h3 {
+      color: #f2341d; }
+    .bpInfoBox--grapefruitLeague a, .bpInfoBox--grapefruitLeague a:hover, .bpInfoBox--orange a, .bpInfoBox--orange a:hover, .bpInfoBox--yellow a, .bpInfoBox--yellow a:hover {
       color: #f2341d; }
   .bpInfoBox--cactusLeague, .bpInfoBox--green {
     background: linear-gradient(135deg, #076329 94%, transparent 94%); }
@@ -5248,20 +5302,9 @@ pre {
   .bpBallparkTable .sorting_3 {
     background-color: #f7faff; }
 
-.bpCalendarContainer {
-  margin-left: 0;
-  background: #fefefe;
-  list-style-type: none; }
-  .bpCalendarContainer[disabled] .accordion-title {
-    cursor: not-allowed; }
-
 .bpCalendar {
   margin-top: 1rem;
   background-color: #fefefe; }
-  .bpCalendar:first-child > :first-child {
-    border-radius: 0 0 0 0; }
-  .bpCalendar:last-child > :last-child {
-    border-radius: 0 0 0 0; }
   .bpCalendar .accordion-content {
     padding: 0;
     border: none; }
@@ -5517,6 +5560,28 @@ pre {
     .bpExpandingSearch__input::-webkit-search-cancel-button {
       display: none; }
 
+@media screen and (max-width: 63.99875em) {
+  table:not(.dataTable) {
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: auto;
+    display: block; }
+  .scrolling-table {
+    position: relative;
+    overflow: hidden;
+    margin: 1rem 0; }
+    .scrolling-table table {
+      margin: 0; }
+  .scrolling-table:after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50px;
+    height: 100%;
+    border-radius: 10px 0 0 10px / 50% 0 0 50%;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    content: ''; } }
+
 .bpNewsStory__storyPhoto.float-left {
   margin: 0 1.5rem 1rem 0; }
 
@@ -5755,11 +5820,20 @@ div.dataTables_scrollFoot table {
   margin-top: 0 !important;
   border-top: none; }
 
+.dataTable tbody tr .sorting_1 {
+  background-color: #e4eeff; }
+
+.dataTable tbody tr .sorting_2 {
+  background-color: #ecf3ff; }
+
+.dataTable tbody tr .sorting_3 {
+  background-color: #f7faff; }
+
 /*------------------------------------*\
-    DATATABLES SCROLLING FIX
+    DATATABLES
 \*------------------------------------*/
 @media print, screen and (min-width: 64em) {
-  .dataTables_scrollBody {
+  .dataTables_scrollBody, .dataTables_scrollHead {
     overflow: visible !important; } }
 
 .dataTables_scrollBody thead {
@@ -5782,6 +5856,18 @@ div.dataTables_scrollFoot table {
     border-radius: 10px 0 0 10px / 50% 0 0 50%;
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
     content: ''; } }
+
+tr.group,
+tr.group:hover {
+  background-color: #003263 !important;
+  line-height: 1.25 !important;
+  color: #fefefe; }
+  tr.group span,
+  tr.group:hover span {
+    color: #e6e6e6; }
+
+#dataTableBPDirectory {
+  line-height: 1 !important; }
 
 /*------------------------------------*\
     CONTACT FORM 7
@@ -5843,9 +5929,9 @@ span.wpcf7-not-valid-tip {
   .post-edit-link::after {
     clear: both; }
 
-.alignnone {
-  margin: 5px 20px 20px 0; }
-
+/*.alignnone {
+	margin:5px 20px 20px 0;
+}*/
 .aligncenter,
 div.aligncenter {
   display: block;
@@ -5863,9 +5949,9 @@ a img.alignright {
   float: right;
   margin: 5px 0 20px 20px; }
 
-a img.alignnone {
-  margin: 5px 20px 20px 0; }
-
+/*a img.alignnone {
+	margin:5px 20px 20px 0;
+}*/
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0; }
@@ -5882,9 +5968,9 @@ a img.aligncenter {
   padding: 5px 3px 10px;
   text-align: center; }
 
-.wp-caption.alignnone {
-  margin: 5px 20px 20px 0; }
-
+/*.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}*/
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0; }
 
