@@ -2,7 +2,7 @@
 interface Icon {
   url: string;
   alt: string;
-  width?: string;
+  widthClass?: string;
 }
 
 interface Props {
@@ -17,7 +17,7 @@ const { title, href, imgUrl, description, icons } = Astro.props;
 ---
 
 <div
-  class="relative flex sm:flex-col flex-col-reverse group overflow-hidden rounded-lg transition-transform duration-300 ease-in-out hover:-translate-y-2"
+  class="relative grow flex sm:flex-col flex-col-reverse group overflow-hidden rounded-lg transition-transform duration-300 ease-in-out hover:-translate-y-2 border border-slate-800"
 >
   <a class="absolute inset-0 z-10" href={href}>
     <span class="sr-only">View {title}</span>
@@ -33,21 +33,20 @@ const { title, href, imgUrl, description, icons } = Astro.props;
     }}
     width={500}
   />
-  <div class="p-4 flex flex-col gap-1 bg-zinc-50">
+  <div class="p-4 pt-3 flex flex-col gap-1 grow bg-zinc-50">
     <h3 class="font-bold text-2xl text-zinc-950">{title}</h3>
     <p class="text-sm text-zinc-950">
       {description}
     </p>
-    <div class="pt-2 flex gap-2">
+    <div class="pt-2 flex gap-2 flex-wrap md:flex-no-wrap">
       {
         icons.map((icon) => (
           <img
             src={icon.url}
             width="40"
             height="40"
-            class={`grayscale h-10 ${!!icon.width ? icon.width : "w-10"}`}
+            class={`h-10 ${!!icon.widthClass ? icon.widthClass : "w-10"}`}
             alt={`${icon.alt} logo`}
-            title={icon.alt}
             loading="lazy"
           />
         ))

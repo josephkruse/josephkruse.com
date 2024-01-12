@@ -20,26 +20,27 @@ import Project from "../components/Project.astro";
       </div>
     </section>
   </main>
-  <section class="w-full py-6 lg:py-8 flex justify-center">
+  <section class="w-full p-6 lg:p-8 flex justify-center">
     <div class="container px-4 md:px-6">
-      <section class="w-full flex items-center justify-center">
+      <section class="w-full flex justify-center">
         <p class="text-lg text-center text-zinc-200 my-4 md:my-8">
-          Building stuff for the web is my passion. Here's some of my recent
+          Building stuff for the web is my passion. These are some of my recent
           projects:
         </p>
       </section>
-      <div class="grid gap-8 md:grid-cols-2 lg:gap-12 mt-8">
+      <div class="flex flex-col gap-8 md:flex-row lg:gap-12 mt-8">
         <Project
           title="Pitch Please!"
           href="https://pp.josephkruse.com"
           imgUrl="/pp-screenshot.png"
-          description="A free online party game based on the board game Snake Oil. Play with your friends in person or over video chat. Includes card illustrations created using Midjourney."
+          description="A free online party game based on the board game Snake Oil. Play with your friends in person or over video chat. Includes illustrations created using Midjourney."
           icons={[
             { url: "/logos/typescript.svg", alt: "Typescript" },
             { url: "/logos/react.svg", alt: "React" },
             { url: "/logos/nextjs.svg", alt: "Next.js" },
+            { url: "/logos/trpc.svg", alt: "React" },
             { url: "/logos/firebase.svg", alt: "Firebase" },
-            { url: "/logos/shadcn.svg", alt: "Tailwind" },
+            { url: "/logos/tailwind.svg", alt: "Tailwind" },
           ]}
         />
         <Project
@@ -52,10 +53,9 @@ import Project from "../components/Project.astro";
             { url: "/logos/react.svg", alt: "React" },
             { url: "/logos/nextjs.svg", alt: "Next.js" },
             { url: "/logos/trpc.svg", alt: "React" },
-            { url: "/logos/mysql.svg", alt: "MySQL", width: "w-20" },
+            { url: "/logos/mysql.svg", alt: "MySQL", widthClass: "w-20" },
             { url: "/logos/prisma.svg", alt: "Prisma" },
             { url: "/logos/tailwind.svg", alt: "Tailwind" },
-            { url: "/logos/shadcn.svg", alt: "shadcn/ui" },
           ]}
         />
       </div>
